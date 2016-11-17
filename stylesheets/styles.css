@@ -10878,6 +10878,12 @@ button.close {
 .btn.with-icon {
   border-radius: 0;
 }
+.btn.with-icon:first-of-type {
+  border-left: none;
+}
+.btn.with-icon:last-of-type {
+  border-right: none;
+}
 @media (max-width: 1920px) {
   .btn.with-icon {
     font-size: 15px;
@@ -10909,10 +10915,15 @@ button.close {
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
+  width: 100%;
 }
 .row.no-gutters > [class*=" col-"], .row.no-gutters > [class^="col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+
+.row.row-eq-height {
+  display: flex;
 }
 
 /*-------------------------------*/
@@ -11379,6 +11390,7 @@ body {
 .cat-list {
   border: none;
   text-align: left;
+  border-right: solid 1px #eeeeee;
 }
 .cat-list > li i {
   position: absolute;
@@ -11391,7 +11403,7 @@ body {
   height: 102.5%;
 }
 .cat-list > li > a:not(.action-link) {
-  border-bottom: solid 1px #e6e6e6;
+  border-bottom: solid 1px #eeeeee;
   padding-right: 70px;
 }
 .cat-list > li > a.action-link span {
@@ -11401,7 +11413,10 @@ body {
   margin-top: -0.8em;
 }
 .cat-list > li > a {
-  border-bottom: solid 1px #e6e6e6;
+  border-bottom: solid 1px #eeeeee;
+}
+.cat-list.secondary {
+  border-right: none;
 }
 .cat-list.secondary > li {
   background-color: #fff;
@@ -11458,7 +11473,7 @@ body {
   line-height: 1.2em !important;
   color: #666;
   margin: 0 !important;
-  padding: 7px !important;
+  padding: 12px !important;
 }
 .feature .description .title, .feature .quote .title, .feature .add-feature .title {
   border-bottom: solid 1px #eeeeee;
@@ -11466,26 +11481,43 @@ body {
   background-color: #2790CF;
   color: #fff;
 }
-.feature .quote {
+.feature .quote, .feature .op {
   text-align: center;
+  border-left: solid 1px #eeeeee;
+  margin-left: -1px;
+  background-color: #fff;
 }
-.feature .quote * {
+.feature .quote *, .feature .op * {
   color: #2790CF;
-  font-weight: bold;
 }
-.feature .quote div {
-  border-bottom: solid 1px #eeeeee;
-}
-.feature .quote > a {
+.feature .quote input, .feature .op input {
   border: none;
+  background-color: #eeeeee;
+  padding: 5px 10px;
+  font-size: 1.5em;
+  text-align: right;
 }
-.feature .quote > a span.fa {
+.feature .quote div, .feature .op div {
+  font-weight: bold;
+  background-color: #fff;
+}
+.feature .quote > a, .feature .op > a {
+  border: none;
+  padding: 0 !important;
+}
+.feature .quote > a span.fa, .feature .op > a span.fa {
+  font-weight: normal;
   position: relative;
   top: inherit;
   right: inherit;
   margin: inherit;
-  margin-top: 10px;
-  padding: 10px !important;
+  width: 100%;
+  padding: 30px 0 !important;
+  font-size: 25px;
+  color: #fff;
+}
+.feature .op {
+  background-color: #2790CF;
 }
 .feature .row {
   border-bottom: solid 10px #CDE9F7;
@@ -11502,6 +11534,15 @@ body {
   font-weight: 800;
   background-color: #fff !important;
   color: inherit !important;
+}
+.feature-container .feature a {
+  border: none;
+}
+.feature-container .feature a span.fa {
+  color: #2790CF !important;
+}
+.feature-container .op {
+  background-color: #fff !important;
 }
 
 /* @end Lista catalogo */
