@@ -86,6 +86,8 @@
 }
 .row.row-eq-height {
     display: flex;
+    flex-direction: row /*| row-reverse | column | column-reverse*/;
+    justify-content: space-between /*flex-start | flex-end | center | space-between | space-around*/;
 }
 /*-------------------------------*/
 /* inizio customizzazioni layout */
@@ -208,6 +210,7 @@ body {
         background-color: rgba(255,255,255,.2) !important;
     }
 }
+
 /* icone varie */
 .icon-storico {
     @include img-retina("../images/icon-storico.png", "../images/icon-storico@2x.png", 31px, 32px);
@@ -587,7 +590,6 @@ body {
     font-size: .75em !important;
     .description, .quote, .add-feature {
         > * {
-            border-right: solid 1px $gray-lighter;
             line-height: 1.2em !important;
             color: #666;
             margin: 0 !important;
@@ -606,8 +608,6 @@ body {
     .quote, .op {
         // padding: 14px !important;
         text-align: center;
-        border-left: solid 1px $gray-lighter;
-        margin-left: -1px;
         background-color: $content-color;
          * {
             color: $body-color;
@@ -646,7 +646,13 @@ body {
     }
     .row {
         border-bottom: solid 10px $sub-content-color;
-        float: left;
+        // float: left;
+        > div {
+            border-right: solid 1px $gray-lighter;
+            &:last-of-type {
+                border-right: none;
+            }
+        }
     }
 }
 
@@ -753,27 +759,3 @@ body {
 /*--------------------------------*/
 /* @end Struttura catalogo */
 /*--------------------------------*/
-
-
-/* customize promo are based on bootstrap jumbotron */
-.reg-action {
-    @extend .jumbotron;
-    background   : #009BE1;
-    color        : lighten(#009BE1, 55);
-    border-radius: 0 !important;
-    margin-bottom: 10px;
-
-    h1 {
-        font-size: 50px;
-    }
-}
-/* img anim */
-.img-hover {
-    @include transition(all .3s ease);
-}
-
-.img-hover:hover {
-    @include backface-visibility(hidden);
-    @include scale(1.10);
-}
-/* customize some bootstrap elements */
