@@ -1,280 +1,738 @@
 @font-face {
     font-family: 'robotobold';
-    src: url('../fonts/Roboto-Bold-webfont.eot');
-    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Bold-webfont.woff2') format('woff2'),
-    url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
-    url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
-    url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    src        : url('../fonts/Roboto-Bold-webfont.eot');
+    src        : url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Bold-webfont.woff2') format('woff2'), url('../fonts/Roboto-Bold-webfont.woff') format('woff'), url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'), url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style : normal;
 }
-
 @font-face {
     font-family: 'robotomedium';
-    src: url('../fonts/Roboto-Medium-webfont.eot');
-    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Medium-webfont.woff2') format('woff2'),
-    url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
-    url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
-    url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    src        : url('../fonts/Roboto-Medium-webfont.eot');
+    src        : url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Medium-webfont.woff2') format('woff2'), url('../fonts/Roboto-Medium-webfont.woff') format('woff'), url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'), url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style : normal;
 }
-
 @font-face {
     font-family: 'robotolight';
-    src: url('../fonts/Roboto-Light-webfont.eot');
-    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Light-webfont.woff2') format('woff2'),
-    url('../fonts/Roboto-Light-webfont.woff') format('woff'),
-    url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
-    url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    src        : url('../fonts/Roboto-Light-webfont.eot');
+    src        : url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Light-webfont.woff2') format('woff2'), url('../fonts/Roboto-Light-webfont.woff') format('woff'), url('../fonts/Roboto-Light-webfont.ttf') format('truetype'), url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style : normal;
 }
-
 @font-face {
     font-family: 'robotothin';
-    src: url('../fonts/Roboto-Thin-webfont.eot');
-    src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Thin-webfont.woff2') format('woff2'),
-    url('../fonts/Roboto-Thin-webfont.woff') format('woff'),
-    url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'),
-    url('../fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    src        : url('../fonts/Roboto-Thin-webfont.eot');
+    src        : url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Thin-webfont.woff2') format('woff2'), url('../fonts/Roboto-Thin-webfont.woff') format('woff'), url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'), url('../fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style : normal;
 }
-
 @font-face {
-  font-family: 'sosa-regular';
-  src: url('../fonts/sosa-regular-webfont.eot');
-  src: url('../fonts/sosa-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/sosa-regular-webfont.woff') format('woff'),
-  url('../fonts/sosa-regular-webfont.ttf') format('truetype'),
-  url('../fonts/sosa-regular-webfont.svg#sosa') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'sosa-regular';
+    src        : url('../fonts/sosa-regular-webfont.eot');
+    src        : url('../fonts/sosa-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sosa-regular-webfont.woff') format('woff'), url('../fonts/sosa-regular-webfont.ttf') format('truetype'), url('../fonts/sosa-regular-webfont.svg#sosa') format('svg');
+    font-weight: normal;
+    font-style : normal;
 }
 
+/*-------------------------------*/
+/* override stili bootstrap      */
+/*-------------------------------*/
+.btn.with-icon {
+    border-radius: 0;
+    @media (max-width: $screen-xl ) {
+        font-size: 15px;
+    }
+    @media (max-width: $screen-lg ) {
+        font-size: 0;
+        .icon {
+            font-size: 20px;
+        }
+    }
+    @media (max-width: $screen-md ) {
+        font-size: 15px;
+    }
+    @media (max-width: $screen-sm ) {
+        padding  : 5px 0;
+        font-size: 0;
+        .icon {
+            font-size: 20px;
+        }
+    }
+
+
+}
+// @media (max-width: $screen-lg) {
+//
+//   [class*="col-"]{
+//       margin-bottom: 30px;
+//   }
+//
+// }
+.row.no-gutters {
+    margin-right: 0;
+    margin-left : 0;
+
+    & > [class*=" col-"],
+    & > [class^="col-"] {
+        padding-right: 0;
+        padding-left : 0;
+    }
+}
 /*-------------------------------*/
 /* inizio customizzazioni layout */
 /*-------------------------------*/
-
-
-
 html {
-    margin: 0;
-    padding: 0;
+    padding    : 0;
     font-family: "robotothin",Helvetica,sans-serif;
+    @media (min-width: $screen-sm) {
+        margin     : 0 20px;
+    }
 }
-
-$simple-breakpoint: 980px;
 body {
     -webkit-font-smoothing: antialiased;
-    background: $body-color;
+    background            : $body-color;
     // margin: 0;
     // padding: 40px 0;
     // font-family: "robotothin",Helvetica,sans-serif;
     // font-size: 12px;
     // font-size: 0.75rem;
     // color: #fff;
-    text-align: center;
-    @media (max-width: $simple-breakpoint) {
-        padding: 20px 0;
-    }
+    text-align            : center;
+    padding-top           : $navbar-height;
 }
+
+.theme-dropdown .dropdown-menu {
+    position     : static;
+    display      : block;
+    margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+    margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+    width: auto;
+}
+
 .splash .content {
     height: 700px;
 }
-
 /*-------------------------------*/
 /*  Header                       */
 /*-------------------------------*/
-
 .navbar-inverse {
-    // background: $body-color;
-    // border-color: $body-color;
     border: none;
-    // color: $content-color;
+    @media (min-width: $screen-sm) {
+        margin     : 0 20px;
+    }
 }
-
 /* header logo */
-
 .header-logo {
     @extend .navbar-brand;
     @extend .text-hide;
     @include img-retina("../images/logo.png", "../images/logo@2x.png", 32px, 26px);
-    background-repeat: no-repeat;
+    background-repeat  : no-repeat;
     background-position: center center;
-    width: 154px;
-    margin: 0;
-    margin-left: 0 !important;
+    width              : 154px;
+    margin             : 0 !important;
     // height: 73px;
 }
 
-
 .splash-logo {
-    display: block;
+    display    : block;
     // margin: auto auto;
-    width: 835px;
-    height: 485px;
-    position: fixed;
+    width      : 835px;
+    height     : 485px;
+    position   : fixed;
     // top: 50%;
-    left: 50%;
+    left       : 50%;
     margin-left: -(835px / 2);
-    margin-top: 150px;
+    margin-top : 150px;
     // z-index: 1042;
     h1 {
-        display: block;
-        width: 835px;
-        height: 485px;
+        display            : block;
+        width              : 835px;
+        height             : 485px;
         @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 288px, 239px);
         background-position: center top;
-        background-repeat: no-repeat;
+        background-repeat  : no-repeat;
         @extend .text-hide;
     }
 }
 
-
 /* nav */
 
 .nav > li.nav-iconitem > a {
-  display: inline-block;
+    display: inline-block;
 }
 
 .nav > li.nav-iconitem > a.nav-iconitem__icon {
     @extend .text-hide;
     @extend .navbar-brand;
-    margin: 0 !important;
-    width: $navbar-height;
-    border-left: solid 1px $content-color;
+    margin             : 0 !important;
+    width              : $navbar-height;
+    border-left        : solid 2px $content-color;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat  : no-repeat;
 }
 
+@media (max-width: $screen-sm) {
+    .nav > li.nav-iconitem > a.nav-iconitem__icon, .nav > li.nav-user > a {
+        font-size: 1em;
+        padding-top:    10px;
+        padding-bottom: 10px;
+        padding-left: 60px;
+        line-height: $line-height-computed;
+        font-family: inherit;
+        width: auto;
+        border: none;
+        display: block;
+        float: none;
+        background-position: 15px center;
+        text-align: left;
+        height :auto;
+        border-top: solid 1px rgba(255,255,255,.2);
+        border-bottom: solid 1px rgba(0,0,0,.2)
+    }
+    .nav > li.nav-iconitem > a.nav-iconitem__icon:hover, .nav > li.nav-user > a:hover {
+        background-color: rgba(255,255,255,.2) !important;
+    }
+}
+/* icone varie */
 .icon-storico {
     @include img-retina("../images/icon-storico.png", "../images/icon-storico@2x.png", 31px, 32px);
 }
+
 .icon-identificativi {
     @include img-retina("../images/icon-identificativi.png", "../images/icon-identificativi@2x.png", 31px, 32px);
 }
+
 .icon-riferimenti-normativi {
     @include img-retina("../images/icon-riferimenti-normativi.png", "../images/icon-riferimenti-normativi@2x.png", 31px, 32px);
 }
+
 .icon-menu {
     @include img-retina("../images/icon-menu.png", "../images/icon-menu@2x.png", 31px, 32px);
 }
 
-/*-------------------------------*/
-/*  Content                      */
-/*-------------------------------*/
+.icon {
+    font-family: sosa-regular;
+    display    : inline-block;
+    font-size  : 1.2em;
 
-/* content */
+    &.icon-progetto:after {
+        content       : 'a';
+        text-transform: initial;
+    }
 
+    &.icon-capitolato:after {
+        content       : "\ ";
+        text-transform: initial;
+    }
+
+    &.icon-salva:after {
+        content       : "å";
+        text-transform: initial;
+    }
+
+    &.icon-annulla:after {
+        content       : "ã";
+        text-transform: initial;
+    }
+
+    &.icon-anteprima:after {
+        content       : "]";
+        text-transform: initial;
+    }
+
+    &.icon-riepilogo:after {
+        content       : "é";
+        text-transform: initial;
+    }
+
+    &.icon-impostazioni:after {
+        content       : "W";
+        text-transform: initial;
+    }
+}
+
+.icon-pareti {
+    @include img-retina("../images/icon-pareti.png", "../images/icon-pareti@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-contropareti {
+    @include img-retina("../images/icon-contropareti.png", "../images/icon-contropareti@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-controsoffitti {
+    @include img-retina("../images/icon-controsoffitti.png", "../images/icon-controsoffitti@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-controsoffitti-modulari-ispezionabili {
+    @include img-retina("../images/icon-controsoffitti-modulari-ispezionabili.png", "../images/icon-controsoffitti-modulari-ispezionabili@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-sistema-cappotto-termico {
+    @include img-retina("../images/icon-sistema-cappotto-termico.png", "../images/icon-sistema-cappotto-termico@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-involucro-esterno {
+    @include img-retina("../images/icon-involucro-esterno.png", "../images/icon-involucro-esterno@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-sottofondi-secco {
+    @include img-retina("../images/icon-sottofondi-secco.png", "../images/icon-sottofondi-secco@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-pavimenti-sopraelevati {
+    @include img-retina("../images/icon-pavimenti-sopraelevati.png", "../images/icon-pavimenti-sopraelevati@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-trattamenti-superficiali {
+    @include img-retina("../images/icon-trattamenti-superficiali.png", "../images/icon-trattamenti-superficiali@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-intonaci {
+    @include img-retina("../images/icon-intonaci.png", "../images/icon-intonaci@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-blank {
+    // @include img-retina("../images/icon-intonaci.png", "../images/icon-intonaci@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+/*-------------------------------*/
+/*  @group Contenitore generale  */
+/*-------------------------------*/
+/* @group Stili ed elementi content */
 .content {
     background: $content-color;
-    padding: 20px;
+    padding   : 15px 0;
+    // min-height: 800px;
 }
-.overlay { // per la finta modale
-    position: fixed;
-    z-index: 1031;
+
+.overlay {
+    // per la finta modale
+    position        : fixed;
+    z-index         : 1031;
     background-color: rgba($body-color, .5);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width           : 100%;
+    height          : 100%;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+}
+/* @end Stili ed elementi content */
+/*-------------------------------*/
+/*  @end contenitore generale  */
+/*-------------------------------*/
+/*--------------------------------*/
+/* @group Struttura catalogo */
+/*--------------------------------*/
+
+/* @group Lista principale (col sx)  */
+.cat-list-title {
+    text-transform: uppercase;
+    color         : $body-color;
+    padding       : 10px 0;
+    margin        : 0;
+    background    : #efefef;
+}
+/* @group Tabs categorie */
+.cat-list-icon {
+    border-bottom   : none;
+    padding-top     : 0;
+    background-color: $sub-content-color;
 }
 
-/* struttura pagina home catalogo */
-
-.cat-list {
-    background: #ccc;
-}
-.cat-content {
-    background-color: rgba($body-color, .5);
-}
-/* making the products navigation bar */
-
-.product-navbar {
-    @extend .navbar;
-    @extend .text-center;
-    background: #e5e5e5;
+.tabs-left.cat-list-icon {
+    border-right: 1px solid $content-color;
 }
 
-.products-navbar-product {
-    @extend .col-xs-2;
-    padding: 15px 0;
-    color: #333;
-    cursor: pointer;
-    span {
-        font-family: sosa-regular;
-        display: block;
-        font-size: 50px;
-    }
-    &:hover {
-        text-decoration: none;
-        color: #333;
-        background: rgba(0,0,0,.035);
-    }
-    @media (max-width: $screen-sm ) {
-        padding: 5px 0;
-        font-size: 0;
-        span {
-            font-size: 30px;
+// .tabs-right.cat-list-icon {
+//     border-left: 1px solid $content-color;
+// }
+
+.tabs-left > li {
+    float        : none;
+    margin-bottom: 0;
+}
+
+.tabs-left > li {
+    margin-right: -1px;
+}
+
+// .tabs-right > li {
+//     margin-left: -1px;
+// }
+
+.tabs-left.cat-list-icon > li:not(.active) > a:focus,
+.tabs-left.cat-list-icon > li:not(.active) > a:hover {
+    border-color: $content-color;
+    background-color   : $body-color;
+}
+
+.tabs-left.cat-list-icon > li.active > a,
+.tabs-left.cat-list-icon > li.active > a:focus,
+.tabs-left.cat-list-icon > li.active > a:hover {
+    border-top         : none;
+    border-bottom-color: $content-color;
+    border-right-color : transparent;
+    border-left-color  : transparent;
+    border-top-color   : $content-color;
+    background-color   : $body-color;
+    color              : $content-color;
+}
+
+.tabs-left.cat-list-icon > li:not(.active) > a:focus,
+.tabs-left.cat-list-icon > li:not(.active) > a:hover {
+    border-color: $content-color;
+    background-color   : $body-color;
+}
+
+
+// .tabs-right.cat-list-icon > li.active > a,
+// .tabs-right.cat-list-icon > li.active > a:focus,
+// .tabs-right.cat-list-icon > li.active > a:hover {
+//     border-bottom    : 1px solid $content-color;
+//     border-left-color: transparent;
+// }
+
+.tabs-left {
+    > li {
+        > a {
+            border-radius: 0;
+            margin-right : 0;
+            padding      : 20px;
+            display      : block;
+            border-bottom: 1px solid $content-color;
         }
     }
 }
 
-
-
-/* making .row class a semantic elements */
-
-.product-highlight, .product-highlight-description, .other-products {
-    @extend .row;
+.main, .secondary {
+    > li {
+        > a {
+            padding-left: 100px;
+        }
+    }
 }
 
-/* customize promo are based on bootstrap jumbotron */
+.tabs-right > li > a {
+    border-radius: 0 0;
+    margin-right : 0;
+}
+/* @end Tabs categorie */
+/* @group Lista catalogo */
 
+// setto la struttura  del tab  verticale a dimensine fissa
+.fixed-width {
+    width: 75px;
+    float: left;
+}
+
+.row-fluid {
+    margin-left       : 75px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+// stilizzo i tab e i contenuti del catalogo
+
+.action {
+    position    : relative;
+    > a:not(.action-link) {
+        margin-right: 60px;
+    }
+    .action-link {
+        position           : absolute;
+        top                : 0;
+        right              : 1px;
+        background-color   : $sub-content-color;
+        padding            : 17px 20px;
+        border-bottom-color: $content-color;
+        height: 100%;
+    }
+    span.fa {
+        position: absolute;
+        top: 50%;
+        margin-top: -.5em;
+        right: 80px;
+        font-size: 1.2em;
+        border: none;
+    }
+}
+
+.cat-list {
+    border    : none;
+    text-align: left;
+
+    > li {
+        i {
+            position        : absolute;
+            top             : -1px;
+            left            : -1px;
+            bottom          : -1px;
+            background-color: $sub-content-color;
+            border-bottom   : solid 1px $content-color;
+            padding         : 0 35px;
+            height          : 102.5%;
+        }
+        > a:not(.action-link) {
+            border-bottom: solid 1px #e6e6e6;
+            padding-right: 70px;
+        }
+        > a.action-link span {
+            position: relative;
+            display: block;
+            top: 50%;
+            margin-top: -.8em
+        }
+        > a {
+            border-bottom: solid 1px #e6e6e6;
+        }
+    }
+
+    // differenzio le voci delle categorie secondarie da quelle primarie
+    &.secondary {
+        > li {
+            background-color: $content-color;
+            float: left;
+            &:not(.feature-container) {
+                width: 100%;
+            }
+            i, a:not(.action-link) {
+                color: $body-color;
+            }
+            i {
+                position        : absolute;
+                top             : -1px;
+                left            : -1px;
+                bottom          : -1px;
+                border-bottom   : solid 1px $sub-content-color;
+                border-right   : solid 1px $sub-content-color;
+                padding         : 0 35px;
+                height          : 102.5%;
+
+            }
+
+            .fa {
+                position: absolute;
+                top: 50%;
+                margin-top: -.5em;
+                right: 20px;
+                font-size: 1.2em;
+                border: none;
+            }
+        }
+        .category-title {
+            background-color: $body-color;
+            font-size: 1.25em;
+            font-weight: bold;
+            i, a:not(.action-link) {
+                color: $content-color;
+            }
+            .fa {
+                right: auto;
+                left: 20px;
+                color: $content-color;
+            }
+            a {
+
+                border: solid 1px $content-color;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+// strutturo e stilizzo i moduli da aggiungere al progetto
+
+.feature {
+    @extend .clearfix;
+    background-color: $content-color;
+    font-size: .75em !important;
+    .description, .quote, .add-feature {
+        > * {
+            border-right: solid 1px $gray-lighter;
+            line-height: 1.2em !important;
+            color: #666;
+            margin: 0 !important;
+            padding: 7px !important;
+        }
+        .title {
+            border-bottom: solid 1px $gray-lighter;
+            font-weight: 800;
+            background-color: $body-color;
+            color: $content-color;
+        }
+        .info {
+
+        }
+    }
+    .quote {
+        // padding: 14px !important;
+        text-align: center;
+         * {
+            color: $body-color;
+            font-weight: bold;
+        }
+        div {
+            border-bottom: solid 1px $gray-lighter;
+        }
+        > a {
+            border: none;
+            span.fa {
+                position: relative;
+                top: inherit;
+                right: inherit;
+                margin: inherit;
+                margin-top: 10px;
+                padding: 10px !important;
+            }
+        }
+    }
+    .row {
+        border-bottom: solid 10px $sub-content-color;
+        float: left;
+    }
+}
+
+// override stili quando nella lista category-title
+
+.feature-container {
+    border: solid 5px $sub-content-color;
+    margin-left: 35px;
+    margin-right: 0px !important;
+    width: auto;
+    .title {
+        font-weight: 800;
+        background-color: $content-color !important;
+        color: inherit !important;
+    }
+}
+
+/* @end Lista catalogo */
+/* @group Lista subcontent */
+
+
+.sub-content-container {
+    background: $body-color;
+}
+.sub-content {
+    margin: 10px;
+}
+
+/* @end Lista subcontent */
+
+/* @end  Lista principale (col sx)   */
+
+/* @group Cat content (col dx) */
+
+.project-navbar {
+    @extend .navbar;
+    @extend .text-center;
+    margin    : 0;
+    min-height: auto;
+    background: $body-color;
+    border    : none;
+}
+
+.cat-content {
+    background-color: rgba($body-color, .2);
+    padding         : 10px;
+    margin          : 2px 0;
+    height          : 650px;
+    overflow        : auto;
+
+    .editor,
+    .project {
+        height: 600px;
+        text-align: left;
+        // overflow: auto;
+    }
+}
+
+.project-navbar-voice {
+    @extend .col-xs-6;
+    padding       : 10px 0;
+    color         : #fff;
+    opacity       : 0.5;
+    cursor        : pointer;
+    text-transform: uppercase;
+    font-size     : 25px;
+
+    &:hover {
+        text-decoration: none;
+        opacity        : 1;
+        color          : #fff;
+    }
+    @media (max-width: $screen-sm ) {
+        padding  : 5px 0;
+        font-size: 0;
+
+        .icon {
+            font-size: 30px;
+        }
+    }
+
+    &.active {
+        opacity: 1;
+    }
+
+    &:first-child {
+        border-right: solid 2px #fff;
+    }
+}
+/* @end Cat content (col dx) */
+
+/*--------------------------------*/
+/* @end Struttura catalogo */
+/*--------------------------------*/
+
+
+/* customize promo are based on bootstrap jumbotron */
 .reg-action {
     @extend .jumbotron;
-    background: #009BE1;
-    color: lighten(#009BE1, 55);
-    border-radius: 0px !important;
+    background   : #009BE1;
+    color        : lighten(#009BE1, 55);
+    border-radius: 0 !important;
     margin-bottom: 10px;
+
     h1 {
         font-size: 50px;
     }
 }
-
 /* img anim */
-
 .img-hover {
-  @include transition(all .3s ease);
+    @include transition(all .3s ease);
 }
+
 .img-hover:hover {
-  @include backface-visibility(hidden);
-  @include scale(1.10);
+    @include backface-visibility(hidden);
+    @include scale(1.10);
 }
-
 /* customize some bootstrap elements */
-
-body {
-  padding-top: $navbar-height;
-}
-
-.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
-
-.theme-showcase .navbar .container {
-  width: auto;
-}
