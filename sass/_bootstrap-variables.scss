@@ -16,8 +16,10 @@
 // colori ufficiali
 
 $body-color: #2790CF;
+$text-default-color: $body-color;
 $sub-content-color: #CDE9F7;
 $content-color: #fff;
+$tab-default-color: #efefef;
 
 //## Gray and brand colors for use across Bootstrap.
 
@@ -77,7 +79,7 @@ $font-size-base:          20px;
 // $headings-font-family:    inherit
 // $headings-font-weight:    500
 // $headings-line-height:    1.1
-// $headings-color:          inherit
+$headings-color:          $text-default-color;
 
 //== Iconography
 //

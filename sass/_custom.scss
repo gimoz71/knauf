@@ -34,6 +34,11 @@
     font-style : normal;
 }
 
+html, body {
+    height: 100%;
+}
+
+
 /*-------------------------------*/
 /* override stili bootstrap      */
 /*-------------------------------*/
@@ -67,6 +72,7 @@
 
 
 }
+
 // @media (max-width: $screen-lg) {
 //
 //   [class*="col-"]{
@@ -127,7 +133,37 @@ body {
 }
 
 .splash .content {
-    height: 700px;
+    height: 100%;
+}
+
+.splash-logo {
+    display    : block;
+    width: auto;
+    height: auto;
+    position   : fixed;
+    left       : 50%;
+    margin-left: -(835px / 2);
+    margin-top: 150px;
+    h1 {
+        display            : block;
+        width              : 835px;
+        height             : 485px;
+        @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 417.5px, 242.5px);
+        background-position: center top;
+        background-repeat  : no-repeat;
+        background-size: cover;
+        @extend .text-hide;
+    }
+}
+@media (max-width: $screen-md) {
+    .splash-logo {
+        margin-left: -(835px / 4);
+        h1 {
+            width              : (835px / 2);
+            height             : (485px / 2);
+            @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 417.5px, 242.5px);
+        }
+    }
 }
 /*-------------------------------*/
 /*  Header                       */
@@ -138,6 +174,7 @@ body {
         margin     : 0 20px;
     }
 }
+
 /* header logo */
 .header-logo {
     @extend .navbar-brand;
@@ -150,28 +187,16 @@ body {
     // height: 73px;
 }
 
-.splash-logo {
-    display    : block;
-    // margin: auto auto;
-    width      : 835px;
-    height     : 485px;
-    position   : fixed;
-    // top: 50%;
-    left       : 50%;
-    margin-left: -(835px / 2);
-    margin-top : 150px;
-    // z-index: 1042;
-    h1 {
-        display            : block;
-        width              : 835px;
-        height             : 485px;
-        @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 288px, 239px);
-        background-position: center top;
-        background-repeat  : no-repeat;
-        @extend .text-hide;
+@media (max-width: $screen-md) {
+    .splash-logo {
+        margin-left: -(835px / 4);
+        h1 {
+            width              : (835px / 2);
+            height             : (485px / 2);
+            @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 417.5px, 242.5px);
+        }
     }
 }
-
 /* nav */
 
 .nav > li.nav-iconitem > a {
@@ -683,7 +708,8 @@ body {
 }
 
 /* @end Lista catalogo */
-/* @group Lista subcontent */
+
+/* @group Stilizzazioni colonna sx */
 
 
 .sub-content-container {
@@ -693,7 +719,11 @@ body {
     margin: 10px;
 }
 
-/* @end Lista subcontent */
+.pagina-scheda .sub-content-container {
+    background: $tab-default-color;
+}
+
+/* @end Stilizzazioni colonna sx */
 
 /* @end  Lista principale (col sx)   */
 

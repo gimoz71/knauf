@@ -1497,7 +1497,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #2790CF;
 }
 h1 small,
 h1 .small, h2 small,
@@ -4193,6 +4193,43 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+
+tr.collapse.in {
+  display: table-row;
+}
+
+tbody.collapse.in {
+  display: table-row-group;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
 .caret {
   display: inline-block;
   width: 0;
@@ -5610,6 +5647,79 @@ a.badge:hover, a.badge:focus {
   cursor: pointer;
 }
 
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron, .container-fluid .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 90px;
+  }
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 28px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.thumbnail > img,
+.thumbnail a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumbnail .caption {
+  padding: 9px;
+  color: #333333;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #2790CF;
+}
+
 .alert {
   padding: 15px;
   margin-bottom: 28px;
@@ -5689,6 +5799,158 @@ a.badge:hover, a.badge:focus {
 }
 .alert-danger .alert-link {
   color: #843534;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.progress {
+  overflow: hidden;
+  height: 28px;
+  margin-bottom: 28px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: 17px;
+  line-height: 28px;
+  color: #fff;
+  text-align: center;
+  background-color: #2790CF;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+.progress-striped .progress-bar,
+.progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+
+.progress.active .progress-bar,
+.progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+
+.progress-bar-success {
+  background-color: #5cb85c;
+}
+.progress-striped .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-info {
+  background-color: #5bc0de;
+}
+.progress-striped .progress-bar-info {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-warning {
+  background-color: #f0ad4e;
+}
+.progress-striped .progress-bar-warning {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-danger {
+  background-color: #d9534f;
+}
+.progress-striped .progress-bar-danger {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.media {
+  margin-top: 15px;
+}
+.media:first-child {
+  margin-top: 0;
+}
+
+.media,
+.media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media-body {
+  width: 10000px;
+}
+
+.media-object {
+  display: block;
+}
+.media-object.img-thumbnail {
+  max-width: none;
+}
+
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
+}
+
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+}
+
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-middle {
+  vertical-align: middle;
+}
+
+.media-bottom {
+  vertical-align: bottom;
+}
+
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.media-list {
+  padding-left: 0;
+  list-style: none;
 }
 
 .list-group {
@@ -7002,7 +7264,7 @@ button.close {
   visibility: hidden;
 }
 
-.text-hide, .header-logo, .splash-logo h1, .nav > li.nav-iconitem > a.nav-iconitem__icon {
+.text-hide, .splash-logo h1, .header-logo, .nav > li.nav-iconitem > a.nav-iconitem__icon {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -10589,6 +10851,10 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
+html, body {
+  height: 100%;
+}
+
 /*-------------------------------*/
 /* override stili bootstrap      */
 /*-------------------------------*/
@@ -10680,7 +10946,49 @@ body {
 }
 
 .splash .content {
-  height: 700px;
+  height: 100%;
+}
+
+.splash-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  position: fixed;
+  left: 50%;
+  margin-left: -417.5px;
+  margin-top: 150px;
+}
+.splash-logo h1 {
+  display: block;
+  width: 835px;
+  height: 485px;
+  background-image: url(/images/../images/splash-logo.png?1479216680);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .splash-logo h1 {
+    background-image: url(/images/../images/splash-logo@2x.png?1479216680);
+    background-size: 417.5px 242.5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .splash-logo {
+    margin-left: -208.75px;
+  }
+  .splash-logo h1 {
+    width: 417.5px;
+    height: 242.5px;
+    background-image: url(/images/../images/splash-logo.png?1479216680);
+  }
+}
+@media only screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 992px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 992px) and (min-device-pixel-ratio: 2), only screen and (max-width: 992px) and (min-resolution: 192dpi), only screen and (max-width: 992px) and (min-resolution: 2dppx) {
+  .splash-logo h1 {
+    background-image: url(/images/../images/splash-logo@2x.png?1479216680);
+    background-size: 417.5px 242.5px;
+  }
 }
 
 /*-------------------------------*/
@@ -10710,27 +11018,20 @@ body {
   }
 }
 
-.splash-logo {
-  display: block;
-  width: 835px;
-  height: 485px;
-  position: fixed;
-  left: 50%;
-  margin-left: -417.5px;
-  margin-top: 150px;
+@media (max-width: 992px) {
+  .splash-logo {
+    margin-left: -208.75px;
+  }
+  .splash-logo h1 {
+    width: 417.5px;
+    height: 242.5px;
+    background-image: url(/images/../images/splash-logo.png?1479216680);
+  }
 }
-.splash-logo h1 {
-  display: block;
-  width: 835px;
-  height: 485px;
-  background-image: url(/images/../images/splash-logo.png?1479216680);
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 992px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 992px) and (min-device-pixel-ratio: 2), only screen and (max-width: 992px) and (min-resolution: 192dpi), only screen and (max-width: 992px) and (min-resolution: 2dppx) {
   .splash-logo h1 {
     background-image: url(/images/../images/splash-logo@2x.png?1479216680);
-    background-size: 288px 239px;
+    background-size: 417.5px 242.5px;
   }
 }
 
@@ -11267,7 +11568,7 @@ body {
 }
 
 /* @end Lista catalogo */
-/* @group Lista subcontent */
+/* @group Stilizzazioni colonna sx */
 .sub-content-container {
   background: #2790CF;
 }
@@ -11276,7 +11577,11 @@ body {
   margin: 10px;
 }
 
-/* @end Lista subcontent */
+.pagina-scheda .sub-content-container {
+  background: #efefef;
+}
+
+/* @end Stilizzazioni colonna sx */
 /* @end  Lista principale (col sx)   */
 /* @group Cat content (col dx) */
 .project-navbar {
