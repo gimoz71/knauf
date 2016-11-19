@@ -66,11 +66,11 @@
     <!-- fine testata -->
 
     <!-- corpo -->
-    <div class="container content">
+    <div class="container content parentOverflowContainer">
         <!-- lista catalogo LATO SX -->
         <div class="col-md-6 col-xl-4">
-            <h3 class="cat-list-title">Catalogo</h3>
-            <div class="row no-gutters">
+            <h3 class="cat-list-title otherOneOverflowSX">Catalogo</h3>
+            <div class="row no-gutters overflowContainerSX">
                 <div class="col-sm-12">
                     <ul class="nav nav-tabs cat-list tabs-left main">
                         <li class="action"><a href="catalogo-home-submenu.html"><i class="icon-pareti">&nbsp;</i>Pareti</a><a href="catalogo-scheda.html" class="action-link"><span class="icon icon-impostazioni"></span></a></li>
@@ -92,11 +92,11 @@
         <div class="clearfix visible-xs-block visible-sm-block" style="height: 20px;"></div>
         <!-- visione contenuti tab  LATO DX-->
         <div class="col-md-6 col-xl-8">
-            <nav class="project-navbar">
+            <nav class="project-navbar otherOneOverflowDX">
                 <a class="project-navbar-voice active"><span class="icon icon-progetto"></span> Progetto</a>
                 <a class="project-navbar-voice">Capitolato <span class="icon icon-capitolato">\</span></a>
             </nav>
-            <div class="cat-content">
+            <div class="cat-content overflowContainerDX">
                 <div class="project">
 
                 </div>
@@ -104,7 +104,7 @@
                         gdfgfdgfdgdfgfd
                     </div> -->
             </div>
-            <div class="btn-group btn-group-justified">
+            <div class="btn-group btn-group-justified otherOneOverflowLastDX">
                 <a href="#" class="btn btn-primary with-icon"><span class="icon icon-salva"></span> Salva</a>
                 <a href="#" class="btn btn-primary with-icon"><span class="icon icon-annulla"></span> Annulla</a>
                 <a href="#" class="btn btn-primary with-icon"><span class="icon icon-anteprima"></span> Anteprima</a>
@@ -122,7 +122,15 @@
     <script src="javascripts/bootstrap.js"></script>
     <script src="javascripts/holder.js"></script>
     <script>
-        $('.dropdown-toggle').dropdown()
+        $('.dropdown-toggle').dropdown();
+        $(document).ready(function() {
+            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowSX").outerHeight()));
+            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowDX").outerHeight()-$(".otherOneOverflowLastDX").outerHeight()));
+        });
+        $(window).on('resize', function() {
+            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowSX").outerHeight()));
+            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowDX").outerHeight()-$(".otherOneOverflowLastDX").outerHeight()));
+        });
     </script>
 </body>
 

@@ -34,10 +34,11 @@
     font-style : normal;
 }
 
-html, body {
-    height: 100%;
-}
+/* @group icone Knauf */
 
+@import "icon-custom";
+
+/* @end icone Knauf */
 
 /*-------------------------------*/
 /* override stili bootstrap      */
@@ -51,7 +52,7 @@ html, body {
         border-right: none;
     }
     @media (max-width: $screen-xl ) {
-        font-size: 15px;
+        font-size: 14px;
     }
     @media (max-width: $screen-lg ) {
         font-size: 0;
@@ -80,6 +81,7 @@ html, body {
 //   }
 //
 // }
+
 .row.no-gutters {
     margin-right: 0;
     margin-left : 0;
@@ -95,9 +97,29 @@ html, body {
     flex-direction: row /*| row-reverse | column | column-reverse*/;
     justify-content: space-between /*flex-start | flex-end | center | space-between | space-around*/;
 }
-/*-------------------------------*/
+
+// automatizzo lo stile per l'altezza automatica in jQuery
+
+.parentOverflowContainer {
+    height: 100%;
+}
+@media (max-width: $screen-md ) {
+    .parentOverflowContainer{
+        height: auto;
+    }
+}
+.overflowContainerSX, .overflowContainerDX {
+    overflow: auto;
+}
+
+/*--------------------------------------*/
 /* inizio customizzazioni layout */
-/*-------------------------------*/
+/*--------------------------------------*/
+
+html, body {
+    height: 100%;
+}
+
 html {
     padding    : 0;
     font-family: "robotothin",Helvetica,sans-serif;
@@ -132,8 +154,10 @@ body {
     width: auto;
 }
 
+
 .splash .content {
     height: 100%;
+    margin-bottom: 20px;
 }
 
 .splash-logo {
@@ -155,6 +179,7 @@ body {
         @extend .text-hide;
     }
 }
+
 @media (max-width: $screen-md) {
     .splash-logo {
         margin-left: -(835px / 4);
@@ -165,8 +190,9 @@ body {
         }
     }
 }
+
 /*-------------------------------*/
-/*  Header                       */
+/*  @group Header               */
 /*-------------------------------*/
 .navbar-inverse {
     border: none;
@@ -179,7 +205,7 @@ body {
 .header-logo {
     @extend .navbar-brand;
     @extend .text-hide;
-    @include img-retina("../images/logo.png", "../images/logo@2x.png", 32px, 26px);
+    @include img-retina("../images/logo.png", "../images/logo@2x.png", 154px, 73px);
     background-repeat  : no-repeat;
     background-position: center center;
     width              : 154px;
@@ -197,6 +223,7 @@ body {
         }
     }
 }
+
 /* nav */
 
 .nav > li.nav-iconitem > a {
@@ -236,20 +263,20 @@ body {
     }
 }
 
-/* @group icone Knauf */
-
-@import "icon-custom";
-
-/* @end icone Knauf */
+/*-------------------------------*/
+/*  @end Header               */
+/*-------------------------------*/
 
 /*-------------------------------*/
 /*  @group Contenitore generale  */
 /*-------------------------------*/
+
 /* @group Stili ed elementi content */
+
 .content {
     background: $content-color;
     padding   : 15px 0;
-    // min-height: 800px;
+    margin-bottom: 20px;
 }
 
 .overlay {
@@ -264,6 +291,7 @@ body {
     right           : 0;
     bottom          : 0;
 }
+
 /* @end Stili ed elementi content */
 /*-------------------------------*/
 /*  @end contenitore generale  */
@@ -513,7 +541,7 @@ body {
 
         }
     }
-    
+
     .quote, .op {
         // padding: 14px !important;
         text-align: center;

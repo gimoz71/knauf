@@ -65,11 +65,11 @@
     <!-- fine testata -->
 
     <!-- corpo -->
-    <div class="container content">
+    <div class="container content parentOverflowContainer">
         <!-- lista catalogo LATO SX -->
         <div class="col-md-6 col-xl-4">
-            <h3 class="cat-list-title">Catalogo</h3>
-            <div class="row no-gutters sub-content-container ">
+            <h3 class="cat-list-title otherOneOverflowSX">Catalogo</h3>
+            <div class="row no-gutters sub-content-container overflowContainerSX">
                 <div class="fixed-width">
                     <ul class="nav nav-tabs tabs-left cat-list-icon sideways">
                         <li><a href="#" class="icon-pareti">&nbsp;</a></li>
@@ -89,7 +89,7 @@
                     <div class="sub-content">
 
                         <ul class="nav nav-tabs cat-list tabs-left secondary">
-                            <li class="category-title">
+                            <li class="category-title ">
                                 <a href="catalogo-home.html" class="submenu-title"><span class="fa fa-chevron-left"></span>Contropareti</a>
                             </li>
                             <li><a href="#"><i class="icon-pareti">&nbsp;</i>Soluzione base contropareti<span class="fa fa-chevron-down"></span></a></li>
@@ -136,11 +136,11 @@
         <div class="clearfix visible-xs-block visible-sm-block" style="height: 20px;"></div>
         <!-- visione contenuti tab LATO DX -->
         <div class="col-md-6 col-xl-8">
-            <nav class="project-navbar">
+            <nav class="project-navbar otherOneOverflowDX">
                 <a class="project-navbar-voice active"><span class="icon icon-progetto"></span> Progetto</a>
                 <a class="project-navbar-voice">Capitolato <span class="icon icon-capitolato">\</span></a>
             </nav>
-            <div class="cat-content">
+            <div class="cat-content overflowContainerDX">
                 <div class="project">
                     <div class="feature">
                         <div class="row row-eq-height no-gutters">
@@ -177,7 +177,7 @@
                         gdfgfdgfdgdfgfd
                     </div> -->
             </div>
-            <div class="btn-group btn-group-justified">
+            <div class="btn-group btn-group-justified otherOneOverflowLastDX">
                 <a href="#" class="btn btn-primary with-icon"><span class="icon icon-salva"></span> Salva</a>
                 <a href="#" class="btn btn-primary with-icon"><span class="icon icon-annulla"></span> Annulla</a>
                 <a href="#" class="btn btn-primary with-icon"><span class="icon icon-anteprima"></span> Anteprima</a>
@@ -195,7 +195,15 @@
     <script src="javascripts/bootstrap.js"></script>
     <script src="javascripts/holder.js"></script>
     <script>
-        $('.dropdown-toggle').dropdown()
+        $('.dropdown-toggle').dropdown();
+        $(document).ready(function() {
+            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowSX").outerHeight()));
+            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowDX").outerHeight()-$(".otherOneOverflowLastDX").outerHeight()));
+        });
+        $(window).on('resize', function() {
+            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowSX").outerHeight()));
+            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowDX").outerHeight()-$(".otherOneOverflowLastDX").outerHeight()));
+        });
     </script>
 </body>
 
