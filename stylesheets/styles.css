@@ -11147,6 +11147,7 @@ body {
   text-transform: initial;
 }
 
+/* @group ICONE PRINCIPALI */
 .icon-pareti {
   background-image: url(/images/../images/icon-pareti.png?1479565068);
   background-position: center center;
@@ -11154,8 +11155,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-pareti {
-    background-image: url(/images/../images/icon-pareti@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-pareti@2x.png?1479577171);
+    background-size: 53px 48px;
   }
 }
 
@@ -11166,8 +11167,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-contropareti {
-    background-image: url(/images/../images/icon-contropareti@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-contropareti@2x.png?1479577171);
+    background-size: 53px 49px;
   }
 }
 
@@ -11178,8 +11179,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-controsoffitti {
-    background-image: url(/images/../images/icon-controsoffitti@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-controsoffitti@2x.png?1479577171);
+    background-size: 53px 48px;
   }
 }
 
@@ -11190,8 +11191,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-controsoffitti-modulari-ispezionabili {
-    background-image: url(/images/../images/icon-controsoffitti-modulari-ispezionabili@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-controsoffitti-modulari-ispezionabili@2x.png?1479577172);
+    background-size: 53px 48px;
   }
 }
 
@@ -11202,8 +11203,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-sistema-cappotto-termico {
-    background-image: url(/images/../images/icon-sistema-cappotto-termico@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-sistema-cappotto-termico@2x.png?1479577172);
+    background-size: 53px 48px;
   }
 }
 
@@ -11214,8 +11215,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-involucro-esterno {
-    background-image: url(/images/../images/icon-involucro-esterno@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-involucro-esterno@2x.png?1479577172);
+    background-size: 60px 48px;
   }
 }
 
@@ -11226,8 +11227,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-sottofondi-secco {
-    background-image: url(/images/../images/icon-sottofondi-secco@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-sottofondi-secco@2x.png?1479577172);
+    background-size: 53px 48px;
   }
 }
 
@@ -11238,8 +11239,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-pavimenti-sopraelevati {
-    background-image: url(/images/../images/icon-pavimenti-sopraelevati@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-pavimenti-sopraelevati@2x.png?1479577172);
+    background-size: 53px 47px;
   }
 }
 
@@ -11250,8 +11251,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-trattamenti-superficiali {
-    background-image: url(/images/../images/icon-trattamenti-superficiali@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-trattamenti-superficiali@2x.png?1479577172);
+    background-size: 53px 46px;
   }
 }
 
@@ -11262,8 +11263,8 @@ body {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-intonaci {
-    background-image: url(/images/../images/icon-intonaci@2x.png);
-    background-size: 31px 32px;
+    background-image: url(/images/../images/icon-intonaci@2x.png?1479577172);
+    background-size: 53px 47px;
   }
 }
 
@@ -11272,6 +11273,317 @@ body {
   background-repeat: no-repeat;
 }
 
+/* @fine ICONE PRINCIPALI */
+/* @group ICONE pareti */
+.icon-pareti-soluzioni-base {
+  background-image: url(/images/../images/icon-pareti-soluzioni-base.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-pareti-soluzioni-base {
+    background-image: url(/images/../images/icon-pareti-soluzioni-base@2x.png?1479577171);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-pareti-ambienti-umidi {
+  background-image: url(/images/../images/icon-pareti-ambienti-umidi.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-pareti-ambienti-umidi {
+    background-image: url(/images/../images/icon-pareti-ambienti-umidi@2x.png?1479577171);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-pareti-antincendio {
+  background-image: url(/images/../images/icon-pareti-antincendio.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-pareti-antincendio {
+    background-image: url(/images/../images/icon-pareti-antincendio@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-pareti-isolamento-acustico {
+  background-image: url(/images/../images/icon-pareti-isolamento-acustico.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-pareti-isolamento-acustico {
+    background-image: url(/images/../images/icon-pareti-isolamento-acustico@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-pareti-antintrusione {
+  background-image: url(/images/../images/icon-pareti-antintrusione.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-pareti-antintrusione {
+    background-image: url(/images/../images/icon-pareti-antintrusione@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-pareti-resistenza-urti {
+  background-image: url(/images/../images/icon-pareti-resistenza-urti.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-pareti-resistenza-urti {
+    background-image: url(/images/../images/icon-pareti-resistenza-urti@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-pareti-installazioni-impiantistiche {
+  background-image: url(/images/../images/icon-pareti-installazioni-impiantistiche.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-pareti-installazioni-impiantistiche {
+    background-image: url(/images/../images/icon-pareti-installazioni-impiantistiche@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+/* @fine ICONE pareti */
+/* @group ICONE contropareti */
+.icon-contropareti-soluzioni-base {
+  background-image: url(/images/../images/icon-contropareti-soluzioni-base.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-contropareti-soluzioni-base {
+    background-image: url(/images/../images/icon-contropareti-soluzioni-base@2x.png);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-contropareti-soluzioni-grandi-pareti {
+  background-image: url(/images/../images/icon-contropareti-soluzioni-grandi-pareti.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-contropareti-soluzioni-grandi-pareti {
+    background-image: url(/images/../images/icon-contropareti-soluzioni-grandi-pareti@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-contropareti-antincendio {
+  background-image: url(/images/../images/icon-contropareti-antincendio.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-contropareti-antincendio {
+    background-image: url(/images/../images/icon-contropareti-antincendio@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-contropareti-isolamento-acustico {
+  background-image: url(/images/../images/icon-contropareti-isolamento-acustico.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-contropareti-isolamento-acustico {
+    background-image: url(/images/../images/icon-contropareti-isolamento-acustico@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-contropareti-isolamento-termico {
+  background-image: url(/images/../images/icon-contropareti-isolamento-termico.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-contropareti-isolamento-termico {
+    background-image: url(/images/../images/icon-contropareti-isolamento-termico@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+/* @fine ICONE contropareti */
+/* @group ICONE controsoffitti */
+.icon-controsoffitti-soluzioni-base {
+  background-image: url(/images/../images/icon-controsoffitti-soluzioni-base.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-controsoffitti-soluzioni-base {
+    background-image: url(/images/../images/icon-controsoffitti-soluzioni-base@2x.png?1479577171);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-controsoffitti-ambienti-umidi {
+  background-image: url(/images/../images/icon-controsoffitti-ambienti-umidi.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-controsoffitti-ambienti-umidi {
+    background-image: url(/images/../images/icon-controsoffitti-ambienti-umidi@2x.png?1479577171);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-controsoffitti-antincendio {
+  background-image: url(/images/../images/icon-controsoffitti-antincendio.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-controsoffitti-antincendio {
+    background-image: url(/images/../images/icon-controsoffitti-antincendio@2x.png?1479577172);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-controsoffitti-isolamento-acustico {
+  background-image: url(/images/../images/icon-controsoffitti-isolamento-acustico.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-controsoffitti-isolamento-acustico {
+    background-image: url(/images/../images/icon-controsoffitti-isolamento-acustico@2x.png?1479577172);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-controsoffitti-assorbimento-acustico {
+  background-image: url(/images/../images/icon-controsoffitti-assorbimento-acustico.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-controsoffitti-assorbimento-acustico {
+    background-image: url(/images/../images/icon-controsoffitti-assorbimento-acustico@2x.png?1479577172);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-controsoffitti-isolamento-termico {
+  background-image: url(/images/../images/icon-controsoffitti-isolamento-termico.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-controsoffitti-isolamento-termico {
+    background-image: url(/images/../images/icon-controsoffitti-isolamento-termico@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+.icon-controsoffitti-antisfondellamento {
+  background-image: url(/images/../images/icon-controsoffitti-antisfondellamento.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-controsoffitti-antisfondellamento {
+    background-image: url(/images/../images/icon-controsoffitti-antisfondellamento@2x.png?1479577172);
+    background-size: 54px 48px;
+  }
+}
+
+/* @fine ICONE controsoffitti */
+/* @group ICONE controsoffitti modulari ispezionabili */
+.icon-cmi-soluzioni-base-modulari {
+  background-image: url(/images/../images/icon-cmi-soluzioni-base-modulari.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-cmi-soluzioni-base-modulari {
+    background-image: url(/images/../images/icon-cmi-soluzioni-base-modulari@2x.png?1479577171);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-cmi-antincendio {
+  background-image: url(/images/../images/icon-cmi-antincendio.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-cmi-antincendio {
+    background-image: url(/images/../images/icon-cmi-antincendio@2x.png?1479577171);
+    background-size: 55px 47px;
+  }
+}
+
+.icon-cmi-assorbimento-acustico {
+  background-image: url(/images/../images/icon-cmi-assorbimento-acustico.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-cmi-assorbimento-acustico {
+    background-image: url(/images/../images/icon-cmi-assorbimento-acustico@2x.png?1479577172);
+    background-size: 54px 47px;
+  }
+}
+
+/* @fine ICONE controsoffitti modulari ispezionabili */
+/* @group ICONE aquapanel */
+.icon-aquapanel-rivestimento-facciata {
+  background-image: url(/images/../images/icon-aquapanel-rivestimento-facciata.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-aquapanel-rivestimento-facciata {
+    background-image: url(/images/../images/icon-aquapanel-rivestimento-facciata@2x.png?1479577171);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-aquapanel-controsoffitto {
+  background-image: url(/images/../images/icon-aquapanel-controsoffitto.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-aquapanel-controsoffitto {
+    background-image: url(/images/../images/icon-aquapanel-controsoffitto@2x.png);
+    background-size: 61px 50px;
+  }
+}
+
+.icon-aquapanel-tamponamento {
+  background-image: url(/images/../images/icon-aquapanel-tamponamento.png?1479565069);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-aquapanel-tamponamento {
+    background-image: url(/images/../images/icon-aquapanel-tamponamento@2x.png?1479577172);
+    background-size: 54px 47px;
+  }
+}
+
+/* @fine ICONE aquapanel */
 /* @end icone Knauf */
 /*-------------------------------*/
 /*  @group Contenitore generale  */
@@ -11510,6 +11822,7 @@ body {
   color: #2790CF;
 }
 .feature .quote input, .feature .op input {
+  width: 100%;
   border: none;
   background-color: #eeeeee;
   padding: 5px 10px;

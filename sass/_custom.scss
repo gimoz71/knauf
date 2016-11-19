@@ -513,6 +513,7 @@ body {
 
         }
     }
+    
     .quote, .op {
         // padding: 14px !important;
         text-align: center;
@@ -521,6 +522,7 @@ body {
             color: $body-color;
         }
         input {
+            width: 100%;
             border: none;
             background-color: $gray-lighter;
             padding: 5px 10px;
