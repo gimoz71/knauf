@@ -11071,6 +11071,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2) !important;
   }
 }
+/* @group icone Knauf */
 /* icone varie */
 .icon-storico {
   background-image: url(/images/../images/icon-storico.png?1479224401);
@@ -11147,7 +11148,7 @@ body {
 }
 
 .icon-pareti {
-  background-image: url(/images/../images/icon-pareti.png?1479320551);
+  background-image: url(/images/../images/icon-pareti.png?1479565068);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11159,7 +11160,7 @@ body {
 }
 
 .icon-contropareti {
-  background-image: url(/images/../images/icon-contropareti.png?1479320565);
+  background-image: url(/images/../images/icon-contropareti.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11171,7 +11172,7 @@ body {
 }
 
 .icon-controsoffitti {
-  background-image: url(/images/../images/icon-controsoffitti.png?1479320591);
+  background-image: url(/images/../images/icon-controsoffitti.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11183,7 +11184,7 @@ body {
 }
 
 .icon-controsoffitti-modulari-ispezionabili {
-  background-image: url(/images/../images/icon-controsoffitti-modulari-ispezionabili.png?1479320667);
+  background-image: url(/images/../images/icon-controsoffitti-modulari-ispezionabili.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11195,7 +11196,7 @@ body {
 }
 
 .icon-sistema-cappotto-termico {
-  background-image: url(/images/../images/icon-sistema-cappotto-termico.png?1479320686);
+  background-image: url(/images/../images/icon-sistema-cappotto-termico.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11207,7 +11208,7 @@ body {
 }
 
 .icon-involucro-esterno {
-  background-image: url(/images/../images/icon-involucro-esterno.png?1479320709);
+  background-image: url(/images/../images/icon-involucro-esterno.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11219,7 +11220,7 @@ body {
 }
 
 .icon-sottofondi-secco {
-  background-image: url(/images/../images/icon-sottofondi-secco.png?1479320755);
+  background-image: url(/images/../images/icon-sottofondi-secco.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11231,7 +11232,7 @@ body {
 }
 
 .icon-pavimenti-sopraelevati {
-  background-image: url(/images/../images/icon-pavimenti-sopraelevati.png?1479320773);
+  background-image: url(/images/../images/icon-pavimenti-sopraelevati.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11243,7 +11244,7 @@ body {
 }
 
 .icon-trattamenti-superficiali {
-  background-image: url(/images/../images/icon-trattamenti-superficiali.png?1479320800);
+  background-image: url(/images/../images/icon-trattamenti-superficiali.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11255,7 +11256,7 @@ body {
 }
 
 .icon-intonaci {
-  background-image: url(/images/../images/icon-intonaci.png?1479320817);
+  background-image: url(/images/../images/icon-intonaci.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11271,6 +11272,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* @end icone Knauf */
 /*-------------------------------*/
 /*  @group Contenitore generale  */
 /*-------------------------------*/
