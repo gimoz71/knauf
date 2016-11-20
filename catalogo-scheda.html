@@ -68,7 +68,7 @@
     <div class="container content parentOverflowContainer">
         <!-- lista catalogo LATO SX -->
         <div class="col-md-6 col-xl-4 colonnaSX">
-            <nav class="project-navbar otherOneOverflowDX">
+            <nav class="project-navbar otherOneOverflowSX">
                 <div class="col-sm-3">
                     <a class="project-navbar-voice">Vento</a>
                 </div>
@@ -274,17 +274,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="javascripts/bootstrap.js"></script>
     <script src="javascripts/holder.js"></script>
-    <script>
-        $('.dropdown-toggle').dropdown();
-        $(document).ready(function() {
-            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowSX").outerHeight()));
-            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowDX").outerHeight() - $(".otherOneOverflowLastDX").outerHeight()));
-        });
-        $(window).on('resize', function() {
-            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowSX").outerHeight()));
-            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowDX").outerHeight() - $(".otherOneOverflowLastDX").outerHeight()));
-        });
-    </script>
+    <script src="javascripts/custom.js"></script>
 </body>
 
 </html>

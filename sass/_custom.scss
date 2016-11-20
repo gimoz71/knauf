@@ -175,9 +175,11 @@
         background-color   : $sub-content-color;
     }
 }
-/*--------------------------------------*/
-/* inizio customizzazioni layout */
-/*--------------------------------------*/
+
+
+/*--------------------------------------------------*/
+/* inizio customizzazioni layout e stili di default */
+/*--------------------------------------------------*/
 body,
 html {
     height: 100%;
@@ -197,6 +199,16 @@ body {
     text-align            : center;
     padding-top           : $navbar-height;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 /*-------------------------------*/
 /*  @group Splash                */
 /*-------------------------------*/
@@ -444,6 +456,7 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing   : border-box;
     box-sizing        : border-box;
+    overflow: hidden;
 }
 // stilizzo i tab e i contenuti del catalogo
 
@@ -513,7 +526,7 @@ body {
 
         > li {
             background-color: $content-color;
-            float           : left;
+            // float           : left;
 
             &:not(.feature-container) {
                 width: 100%;
@@ -698,6 +711,7 @@ body {
 }
 /* @end Stilizzazioni colonna sx */
 /* @end  Lista principale (col sx)   */
+
 /* @group Cat content (col dx) */
 .project-navbar {
     @extend .navbar;
@@ -733,8 +747,9 @@ body {
         &:first-of-type {
             border: none;
         }
-        @media (max-width: $screen-xs ) {
+        @media (max-width: $screen-sm ) {
             border: none;
+            border-top: solid 4px $content-color;
         }
     }
     border    : none;

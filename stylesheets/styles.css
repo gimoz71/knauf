@@ -11497,9 +11497,9 @@ button.close {
   }
 }
 
-/*--------------------------------------*/
-/* inizio customizzazioni layout */
-/*--------------------------------------*/
+/*--------------------------------------------------*/
+/* inizio customizzazioni layout e stili di default */
+/*--------------------------------------------------*/
 body,
 html {
   height: 100%;
@@ -11520,6 +11520,15 @@ body {
   background: #2790CF;
   text-align: center;
   padding-top: 73px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*-------------------------------*/
@@ -11772,6 +11781,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .action {
@@ -11831,7 +11841,6 @@ body {
 }
 .cat-list.secondary > li {
   background-color: #fff;
-  float: left;
 }
 .cat-list.secondary > li:not(.feature-container) {
   width: 100%;
@@ -12009,13 +12018,13 @@ body {
   opacity: 1;
 }
 .colonnaDX .project-navbar .impostazioni {
-  background-image: url(/images/../images/icon-impostazioni.png?1479667549);
+  background-image: url(/images/../images/icon-impostazioni.png?1479667757);
   background-position: 95% 50%;
   background-repeat: no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .colonnaDX .project-navbar .impostazioni {
-    background-image: url(/images/../images/icon-impostazioni@2x.png?1479667536);
+    background-image: url(/images/../images/icon-impostazioni@2x.png?1479667748);
     background-size: 100px 100px;
   }
 }
@@ -12025,9 +12034,10 @@ body {
 .project-navbar > div:first-of-type {
   border: none;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .project-navbar > div {
     border: none;
+    border-top: solid 4px #fff;
   }
 }
 
