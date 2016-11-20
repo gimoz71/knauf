@@ -93,8 +93,12 @@
         <!-- visione contenuti tab  LATO DX-->
         <div class="col-md-6 col-xl-8">
             <nav class="project-navbar otherOneOverflowDX">
-                <a class="project-navbar-voice active"><span class="icon icon-progetto"></span> Progetto</a>
-                <a class="project-navbar-voice">Capitolato <span class="icon icon-capitolato">\</span></a>
+                <div class="col-xs-6">
+                    <a class="project-navbar-voice active"><span class="icon icon-progetto"></span> prosegui</a>
+                </div>
+                <div class="col-xs-6">
+                    <a class="project-navbar-voice">Capitolato <span class="icon icon-capitolato">\</span></a>
+                </div>
             </nav>
             <div class="cat-content overflowContainerDX">
                 <div class="project">
@@ -124,12 +128,12 @@
     <script>
         $('.dropdown-toggle').dropdown();
         $(document).ready(function() {
-            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowSX").outerHeight()));
-            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowDX").outerHeight()-$(".otherOneOverflowLastDX").outerHeight()));
+            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowSX").outerHeight()));
+            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowDX").outerHeight() - $(".otherOneOverflowLastDX").outerHeight()));
         });
         $(window).on('resize', function() {
-            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowSX").outerHeight()));
-            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowDX").outerHeight()-$(".otherOneOverflowLastDX").outerHeight()));
+            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowSX").outerHeight()));
+            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowDX").outerHeight() - $(".otherOneOverflowLastDX").outerHeight()));
         });
     </script>
 </body>

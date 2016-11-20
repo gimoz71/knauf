@@ -1992,14 +1992,14 @@ pre code {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xl-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xl-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xl-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xl-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xl-5, .col-xs-6, .project-navbar-voice, .col-sm-6, .col-md-6, .col-lg-6, .col-xl-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xl-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xl-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xl-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xl-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xl-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xl-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xl-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xl-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xl-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xl-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xl-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xl-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xl-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xl-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xl-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xl-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xl-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xl-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .project-navbar-voice, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
 
@@ -2023,7 +2023,7 @@ pre code {
   width: 41.6666666667%;
 }
 
-.col-xs-6, .project-navbar-voice {
+.col-xs-6 {
   width: 50%;
 }
 
@@ -11417,7 +11417,9 @@ button.close {
 
 .row.row-eq-height {
   display: flex;
+  /*| row-reverse | column | column-reverse*/
   flex-direction: row;
+  /*flex-start | flex-end | center | space-between | space-around*/
   justify-content: space-between;
 }
 
@@ -11430,14 +11432,76 @@ button.close {
     height: auto;
   }
 }
-.overflowContainerSX, .overflowContainerDX {
+.overflowContainerDX,
+.overflowContainerSX {
   overflow: auto;
+}
+
+.table-feature {
+  border-collapse: collapse;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  color: #2790CF;
+}
+.table-feature.table {
+  margin-bottom: 10px;
+}
+.table-feature.equal-cell-width {
+  table-layout: fixed;
+}
+.table-feature td,
+.table-feature th {
+  padding: 5px;
+  border-top: none !important;
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+.table-feature td td,
+.table-feature td th,
+.table-feature th td,
+.table-feature th th {
+  border: none;
+}
+.table-feature tr:last-of-type td {
+  border-bottom: none;
+}
+.table-feature td:last-of-type {
+  border-right: none;
+}
+.table-feature input,
+.table-feature select,
+.table-feature textarea {
+  width: 100%;
+  border: none;
+  background-color: #CDE9F7;
+  padding: 3px 7px;
+  text-align: right;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.table-feature select {
+  padding-left: 35px;
+  -webkit-appearance: none;
+  box-shadow: none;
+  background-image: url(/images/../images/select-arrow.png?1479658677);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: #CDE9F7;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .table-feature select {
+    background-image: url(/images/../images/select-arrow@2x.png?1479658693);
+    background-size: 30px 30px;
+  }
 }
 
 /*--------------------------------------*/
 /* inizio customizzazioni layout */
 /*--------------------------------------*/
-html, body {
+body,
+html {
   height: 100%;
 }
 
@@ -11458,20 +11522,9 @@ body {
   padding-top: 73px;
 }
 
-.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
-
-.theme-showcase .navbar .container, .theme-showcase .project-navbar .container {
-  width: auto;
-}
-
+/*-------------------------------*/
+/*  @group Splash                */
+/*-------------------------------*/
 .splash .content {
   height: 100%;
   margin-bottom: 20px;
@@ -11519,6 +11572,9 @@ body {
   }
 }
 
+/*-------------------------------*/
+/*  @end Splash               */
+/*-------------------------------*/
 /*-------------------------------*/
 /*  @group Header               */
 /*-------------------------------*/
@@ -11577,7 +11633,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav > li.nav-iconitem > a.nav-iconitem__icon, .nav > li.nav-user > a {
+  .nav > li.nav-iconitem > a.nav-iconitem__icon,
+  .nav > li.nav-user > a {
     font-size: 1em;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -11595,7 +11652,8 @@ body {
     border-bottom: solid 1px rgba(0, 0, 0, 0.2);
   }
 
-  .nav > li.nav-iconitem > a.nav-iconitem__icon:hover, .nav > li.nav-user > a:hover {
+  .nav > li.nav-iconitem > a.nav-iconitem__icon:hover,
+  .nav > li.nav-user > a:hover {
     background-color: rgba(255, 255, 255, 0.2) !important;
   }
 }
@@ -11692,7 +11750,8 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-.main > li > a, .secondary > li > a {
+.main > li > a,
+.secondary > li > a {
   padding-left: 100px;
 }
 
@@ -11762,7 +11821,7 @@ body {
   position: relative;
   display: block;
   top: 50%;
-  margin-top: -0.8em;
+  margin-top: -.8em;
 }
 .cat-list > li > a {
   border-bottom: solid 1px #eeeeee;
@@ -11777,7 +11836,8 @@ body {
 .cat-list.secondary > li:not(.feature-container) {
   width: 100%;
 }
-.cat-list.secondary > li i, .cat-list.secondary > li a:not(.action-link) {
+.cat-list.secondary > li a:not(.action-link),
+.cat-list.secondary > li i {
   color: #2790CF;
 }
 .cat-list.secondary > li i {
@@ -11803,7 +11863,8 @@ body {
   font-size: 1.25em;
   font-weight: bold;
 }
-.cat-list.secondary .category-title i, .cat-list.secondary .category-title a:not(.action-link) {
+.cat-list.secondary .category-title a:not(.action-link),
+.cat-list.secondary .category-title i {
   color: #fff;
 }
 .cat-list.secondary .category-title .fa {
@@ -11818,28 +11879,35 @@ body {
 
 .feature {
   background-color: #fff;
-  font-size: .75em !important;
+  font-size: 0.75em !important;
 }
-.feature .description > *, .feature .quote > *, .feature .add-feature > * {
+.feature .add-feature > *,
+.feature .description > *,
+.feature .quote > * {
   line-height: 1.2em !important;
   color: #666;
   margin: 0 !important;
   padding: 12px !important;
 }
-.feature .description .title, .feature .quote .title, .feature .add-feature .title {
+.feature .add-feature .title,
+.feature .description .title,
+.feature .quote .title {
   border-bottom: solid 1px #eeeeee;
   font-weight: 800;
   background-color: #2790CF;
   color: #fff;
 }
-.feature .quote, .feature .op {
+.feature .op,
+.feature .quote {
   text-align: center;
   background-color: #fff;
 }
-.feature .quote *, .feature .op * {
+.feature .op *,
+.feature .quote * {
   color: #2790CF;
 }
-.feature .quote input, .feature .op input {
+.feature .op input,
+.feature .quote input {
   width: 100%;
   border: none;
   background-color: #eeeeee;
@@ -11847,15 +11915,18 @@ body {
   font-size: 1.5em;
   text-align: right;
 }
-.feature .quote div, .feature .op div {
+.feature .op div,
+.feature .quote div {
   font-weight: bold;
   background-color: #fff;
 }
-.feature .quote > a, .feature .op > a {
+.feature .op > a,
+.feature .quote > a {
   border: none;
   padding: 0 !important;
 }
-.feature .quote > a span.fa, .feature .op > a span.fa {
+.feature .op > a span.fa,
+.feature .quote > a span.fa {
   font-weight: normal;
   position: relative;
   top: inherit;
@@ -11881,8 +11952,8 @@ body {
 
 .feature-container {
   border: solid 5px #CDE9F7;
-  margin-left: 35px;
-  margin-right: 0px !important;
+  margin-left: 35px !important;
+  margin-right: 0 !important;
   width: auto;
 }
 .feature-container .title {
@@ -11920,8 +11991,68 @@ body {
 .project-navbar {
   margin: 0;
   min-height: auto;
-  background: #2790CF;
   border: none;
+}
+.colonnaSX .project-navbar {
+  background: #fff;
+}
+.colonnaSX .project-navbar .active {
+  background-color: #efefef;
+}
+.colonnaSX .project-navbar .active > a {
+  opacity: 1;
+}
+.colonnaDX .project-navbar {
+  background: #2790CF;
+}
+.colonnaDX .project-navbar .active > a {
+  opacity: 1;
+}
+.colonnaDX .project-navbar .impostazioni {
+  background-image: url(/images/../images/icon-impostazioni.png?1479667549);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .colonnaDX .project-navbar .impostazioni {
+    background-image: url(/images/../images/icon-impostazioni@2x.png?1479667536);
+    background-size: 100px 100px;
+  }
+}
+.project-navbar > div {
+  border-left: solid 4px #fff;
+}
+.project-navbar > div:first-of-type {
+  border: none;
+}
+@media (max-width: 480px) {
+  .project-navbar > div {
+    border: none;
+  }
+}
+
+.project-navbar-voice {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  opacity: 0.5;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.colonnaSX .project-navbar-voice {
+  color: #2790CF;
+}
+.colonnaDX .project-navbar-voice {
+  color: #fff;
+}
+.project-navbar-voice:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+.colonnaSX .project-navbar-voice.active {
+  opacity: 1;
+  background: #efefef;
 }
 
 .cat-content {
@@ -11935,35 +12066,6 @@ body {
 .cat-content .project {
   height: 600px;
   text-align: left;
-}
-
-.project-navbar-voice {
-  padding: 10px 0;
-  color: #fff;
-  opacity: 0.5;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 25px;
-}
-.project-navbar-voice:hover {
-  text-decoration: none;
-  opacity: 1;
-  color: #fff;
-}
-@media (max-width: 768px) {
-  .project-navbar-voice {
-    padding: 5px 0;
-    font-size: 0;
-  }
-  .project-navbar-voice .icon {
-    font-size: 30px;
-  }
-}
-.project-navbar-voice.active {
-  opacity: 1;
-}
-.project-navbar-voice:first-child {
-  border-right: solid 2px #fff;
 }
 
 /* @end Cat content (col dx) */

@@ -67,29 +67,158 @@
     <!-- corpo -->
     <div class="container content parentOverflowContainer">
         <!-- lista catalogo LATO SX -->
-        <div class="col-md-6 col-xl-4">
-            <h3 class="cat-list-title otherOneOverflowSX">Catalogo</h3>
+        <div class="col-md-6 col-xl-4 colonnaSX">
+            <nav class="project-navbar otherOneOverflowDX">
+                <div class="col-sm-3">
+                    <a class="project-navbar-voice">Vento</a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="project-navbar-voice">Sisma</a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="project-navbar-voice">Folla</a>
+                </div>
+                <div class="col-sm-3 active">
+                    <a class="project-navbar-voice">parete</a>
+                </div>
+            </nav>
+            <!-- <h3 class="cat-list-title otherOneOverflowSX">Catalogo</h3> -->
             <div class="row no-gutters sub-content-container overflowContainerSX">
                 <div class="sub-content">
-                    <div style="background:#fff">
-
-                        <h4>PARETE</h4>
-
-
-                        
-
-
-                    </div>
+                    <table class="table table-feature equal-cell-width">
+                        <tr>
+                            <td>
+                                <h4>PARETE</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="table-feature">
+                                    <tr>
+                                        <td>
+                                            Altezza della parete [m]
+                                        </td>
+                                        <td>
+                                            <input type="text" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Altezza della parete [m]
+                                        </td>
+                                        <td>
+                                            <input type="text" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Altezza della parete [m]
+                                        </td>
+                                        <td>
+                                            <input type="text" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            note
+                                            <textarea maxlength="20"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-feature equal-cell-width">
+                        <tr>
+                            <td colspan="3">
+                                <h4>Caratteristiche facce</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <h5>faccia "A"</h5>
+                            </td>
+                            <td>
+                                <h5>faccia "A"</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            1a lastra
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Spessore
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <select>
+                                                <option>item sdsdf ad fasfas sa as</option>
+                                                <option>item</option>
+                                                <option>item</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select>
+                                                <option>item</option>
+                                                <option>item</option>
+                                                <option>item</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <select>
+                                                <option>item</option>
+                                                <option>item</option>
+                                                <option>item</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select>
+                                                <option>item</option>
+                                                <option>item</option>
+                                                <option>item</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
         <!-- fine lista catalogo -->
         <div class="clearfix visible-xs-block visible-sm-block" style="height: 20px;"></div>
         <!-- visione contenuti tab LATO DX -->
-        <div class="col-md-6 col-xl-8">
+        <div class="col-md-6 col-xl-8 colonnaDX">
             <nav class="project-navbar otherOneOverflowDX">
-                <a class="project-navbar-voice active"><span class="icon icon-progetto"></span> Progetto</a>
-                <a class="project-navbar-voice">Capitolato <span class="icon icon-capitolato">\</span></a>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <a class="project-navbar-voice active">prosegui</a>
+                </div>
+                <div class="col-sm-6 col-md-8 col-lg-8 active impostazioni">
+                    <a class="project-navbar-voice"><span class="fa fa-chevron-down"></span> Impostazioni verifiche</a>
+                </div>
             </nav>
             <div class="cat-content overflowContainerDX">
                 <div class="project">
@@ -148,12 +277,12 @@
     <script>
         $('.dropdown-toggle').dropdown();
         $(document).ready(function() {
-            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowSX").outerHeight()));
-            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowDX").outerHeight()-$(".otherOneOverflowLastDX").outerHeight()));
+            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowSX").outerHeight()));
+            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowDX").outerHeight() - $(".otherOneOverflowLastDX").outerHeight()));
         });
         $(window).on('resize', function() {
-            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowSX").outerHeight()));
-            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height()-$(".otherOneOverflowDX").outerHeight()-$(".otherOneOverflowLastDX").outerHeight()));
+            $(".overflowContainerSX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowSX").outerHeight()));
+            $(".overflowContainerDX").css("max-height", ($(".parentOverflowContainer").height() - $(".otherOneOverflowDX").outerHeight() - $(".otherOneOverflowLastDX").outerHeight()));
         });
     </script>
 </body>
