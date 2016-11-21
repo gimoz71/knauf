@@ -72,13 +72,13 @@
                 <div class="col-sm-3">
                     <a href="catalogo-scheda-vento.html" class="project-navbar-voice">Vento</a>
                 </div>
-                <div class="col-sm-3">
-                    <a href="catalogo-scheda-sisma.html" class="project-navbar-voice">Sisma</a>
+                <div class="col-sm-3 active">
+                    <a href="#" class="project-navbar-voice">Sisma</a>
                 </div>
                 <div class="col-sm-3">
                     <a href="catalogo-scheda-folla.html" class="project-navbar-voice">Folla</a>
                 </div>
-                <div class="col-sm-3 active">
+                <div class="col-sm-3">
                     <a href="catalogo-scheda.html" class="project-navbar-voice">parete</a>
                 </div>
             </nav>
@@ -87,42 +87,46 @@
                 <div class="sub-content">
                     <table class="table table-feature equal-cell-width">
                         <tr>
-                            <td>
-                                <h4>PARETE</h4>
+                            <td colspan="4">
+                                <h4>Parametri dell spettro di risposta</h4>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <table class="table-feature">
+                        <tr class="feature-setting feature-group">
+                            <td colspan="2">SLV</td>
+                            <td colspan="2">SLD</td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="2">
+                                <table class="table table-feature equal-cell-width">
                                     <tr>
-                                        <td>
-                                            Altezza della parete [m]
-                                        </td>
-                                        <td>
-                                            <input type="text" value="0,000">
-                                        </td>
+                                        <td>ag/g =</td>
+                                        <td><input type="text" value="0,000" /></td>
                                     </tr>
+                                </table>
+                            </td>
+                            <td colspan="2">
+                                <table class="table table-feature equal-cell-width">
                                     <tr>
-                                        <td>
-                                            Altezza della parete [m]
-                                        </td>
-                                        <td>
-                                            <input type="text" value="0,000">
-                                        </td>
+                                        <td>ag/g =</td>
+                                        <td><input type="text" value="0,000" /></td>
                                     </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="2">
+                                <table class="table table-feature equal-cell-width">
                                     <tr>
-                                        <td>
-                                            Altezza della parete [m]
-                                        </td>
-                                        <td>
-                                            <input type="text" value="0,000">
-                                        </td>
+                                        <td>S =</td>
+                                        <td><input type="text" value="0,000" /></td>
                                     </tr>
+                                </table>
+                            </td>
+                            <td colspan="2">
+                                <table class="table table-feature equal-cell-width">
                                     <tr>
-                                        <td colspan="2">
-                                            note
-                                            <textarea maxlength="20"></textarea>
-                                        </td>
+                                        <td>S =</td>
+                                        <td><input type="text" value="0,000" /></td>
                                     </tr>
                                 </table>
                             </td>
@@ -131,83 +135,7 @@
                     <table class="table table-feature equal-cell-width">
                         <tr>
                             <td colspan="3">
-                                <h4>Caratteristiche facce</h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-                                <h5>faccia "A"</h5>
-                            </td>
-                            <td>
-                                <h5>faccia "A"</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            1a lastra
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Spessore
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <select>
-                                                <option>item sdsdf ad fasfas sa as</option>
-                                                <option>item</option>
-                                                <option>item</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select>
-                                                <option>item</option>
-                                                <option>item</option>
-                                                <option>item</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <select>
-                                                <option>item</option>
-                                                <option>item</option>
-                                                <option>item</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select>
-                                                <option>item</option>
-                                                <option>item</option>
-                                                <option>item</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tab-note" colspan="3">
-                                Nota: nel caso di parete interna alla costruzione &egrave; indifferente a quale lato della parete si attribuisce il nome "Faccia A" ed a quale il nome "Faccia B". Nel caso di parete perimetrale, la "Faccia A" deve essere identificata con il lato della
-                                aprete esterna all'edificio.
+                                <h4>Parametri "Z", "H", "T1" riguardandi la costruzione in cui inserire la parete</h4>
                             </td>
                         </tr>
                         <tr>
@@ -243,18 +171,20 @@
                         <tr>
                             <td colspan="3">
                                     <h5>Categoria di sottosuolo
-                                    <input type="text" value="C" style="width: 100px;"></h5>
+                                    <input type="text" value="C" class="discrete"></h5>
                                 </div>
                             </td>
                         </tr>
+                    </table>
+                    <table class="table table-feature equal-cell-width">
                         <tr>
-                            <td colspan="3">
-                                <h4>Indicazione lastre</h4>
+                            <td>
+                                <h4>Carichi permanenti portati</h4>
                             </td>
                         </tr>
                         <tr>
-                            <td class="tab-images" colspan="3">
-                                <img src="images/indicazioni-lastre.jpg" />
+                            <td >
+                                Permanenti portati [N/m2] <input type="text" value="0,000" class="discrete" />
                             </td>
                         </tr>
                     </table>
@@ -342,7 +272,7 @@
                                 <input type="text" value="0,000" class="grey">
                             </td>
                         </tr>
-                        <tr class="feature-setting feature-group init">
+                        <tr class="feature-setting feature-group">
                             <td colspan="4">
                                 1) Verifiche sezione composta
                             </td>
