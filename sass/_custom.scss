@@ -39,35 +39,46 @@
 /*-------------------------------*/
 /* override stili bootstrap      */
 /*-------------------------------*/
-.btn.with-icon {
+.btn {
     border-radius: 0;
-
-    &:first-of-type {
-        border-left: none;
+    // border-color: $content-color;
+    width: 100%;
+    &:first {
+        padding-left: 0;
+        margin-left: 0;
     }
-
-    &:last-of-type {
-        border-right: none;
+    &:last {
+        padding-right: 0;
+        margin-right: 0;
     }
-    @media (max-width: $screen-xl ) {
-        font-size: 14px;
-    }
-    @media (max-width: $screen-lg ) {
-        font-size: 0;
-
-        .icon {
-            font-size: 20px;
+    &.with-icon {
+        &:first-of-type {
+            border-left: none;
         }
-    }
-    @media (max-width: $screen-md ) {
-        font-size: 15px;
-    }
-    @media (max-width: $screen-sm ) {
-        padding  : 5px 0;
-        font-size: 0;
 
-        .icon {
-            font-size: 20px;
+        &:last-of-type {
+            border-right: none;
+        }
+        @media (max-width: $screen-xl ) {
+            font-size: 14px;
+        }
+        @media (max-width: $screen-lg ) {
+            font-size: 0;
+
+            .icon {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: $screen-md ) {
+            font-size: 15px;
+        }
+        @media (max-width: $screen-sm ) {
+            padding  : 5px 0;
+            font-size: 0;
+
+            .icon {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -88,6 +99,17 @@
     & > [class^="col-"] {
         padding-right: 0;
         padding-left : 0;
+    }
+}
+.gap {
+    & > [class*=" col-"],
+    & > [class^="col-"] {
+        &:first-of-type {
+            padding-right: 5px;
+        }
+        &:last-of-type {
+            padding-left: 5px;
+        }
     }
 }
 
@@ -114,6 +136,10 @@
     overflow: auto;
 }
 
+
+table {
+    width: 100%;
+}
 .table-feature {
     border-collapse : collapse;
     border          : none;
@@ -123,6 +149,9 @@
 
     &.table {
         margin-bottom: 10px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     &.equal-cell-width {
@@ -151,6 +180,14 @@
     td:last-of-type {
         border-right: none;
     }
+    .tab-note {
+        text-align: justify;
+        background-color: rgba($sub-content-color, .15);
+    }
+    .tab-images {
+        margin: 0;
+        padding: 0;
+    }
 
     input,
     select,
@@ -163,6 +200,25 @@
         -webkit-border-radius: 0;
         -moz-border-radius   : 0;
         border-radius        : 0;
+        .feature-editor & {
+            background-color     : $verifiche-color;
+
+        }
+        &.grey {
+            background-color: $tab-default-color;
+        }
+    }
+    .feature-setting {
+        font-size: .75em;
+    }
+    .feature-group {
+        td {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+        &:last-of-type td {
+            padding-bottom: 8px;
+        }
     }
 
     select {
@@ -202,6 +258,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 img {
@@ -517,6 +574,8 @@ img {
         }
 
         > a {
+            @extend h5;
+            margin: 0;
             border-bottom: solid 1px $gray-lighter;
         }
     }
@@ -740,6 +799,9 @@ img {
             background-repeat  : no-repeat;
         }
     }
+    &.verifiche {
+        background-color: $verifiche-color;
+    }
     > div {
 
         border-left: solid 4px $content-color;
@@ -792,17 +854,27 @@ img {
 }
 
 .cat-content {
-    background-color: rgba($body-color, .2);
-    padding         : 10px;
     margin          : 2px 0;
-    height          : 650px;
     overflow        : auto;
-
     .editor,
+    .project,
+    .feature-editor {
+        // min-height    : 600px;
+        padding         : 10px;
+        margin-bottom: 10px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
     .project {
-        height    : 600px;
+        background-color: rgba($body-color, .2);
         text-align: left;
-        // overflow: auto;
+    }
+    .feature-editor {
+        background-color: $tab-default-color;
+        * {
+        color: #333 !important;
+        }
     }
 }
 

@@ -99,7 +99,7 @@
                                             Altezza della parete [m]
                                         </td>
                                         <td>
-                                            <input type="text" />
+                                            <input type="text" value="0,000">
                                         </td>
                                     </tr>
                                     <tr>
@@ -107,7 +107,7 @@
                                             Altezza della parete [m]
                                         </td>
                                         <td>
-                                            <input type="text" />
+                                            <input type="text" value="0,000">
                                         </td>
                                     </tr>
                                     <tr>
@@ -115,7 +115,7 @@
                                             Altezza della parete [m]
                                         </td>
                                         <td>
-                                            <input type="text" />
+                                            <input type="text" value="0,000">
                                         </td>
                                     </tr>
                                     <tr>
@@ -204,6 +204,21 @@
                                 </table>
                             </td>
                         </tr>
+                        <tr>
+                            <td class="tab-note" colspan="3">
+                                Nota: nel caso di parete interna alla costruzione &egrave; indifferente a quale lato della parete si attribuisce il nome "Faccia A" ed a quale il nome "Faccia B". Nel caso di parete perimetrale, la "Faccia A" deve essere identificata con il lato della aprete esterna all'edificio.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <h4>Indicazione lastre</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tab-images" colspan="3">
+                                <img src="images/indicazioni-lastre.jpg" />
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
@@ -221,35 +236,390 @@
                 </div>
             </nav>
             <div class="cat-content overflowContainerDX">
-                <div class="project">
-                    <div class="feature">
-                        <div class="row row-eq-height no-gutters">
-                            <div class="col-xs-8 col-xl-9 description">
-                                <h6 class="title">Controsoffitto modulare ispezionbile REI 120 su solaio Predarelles 5 +15+5cm; rivestimeto: pannelli in fibra mierale AMF THERMATEX 600x600x15cm</h6>
-                                <p class="info">
-                                    Soffitto modulare ispezionabile in pannelli di fibra minerale AMF THERMATEX 600x600x15cm su orditura metallica seminascosta posta a 20cm dall'ala delle travi; rapporto n. 2527272342/3131FR
-                                </p>
-                            </div>
-                            <div class="col-xs-3 col-xl-2 quote">
-                                <div>Q.t&agrave; mq<sup>2</sup><br /><br /><input id="intNumberStep3" type="number" min="10" max="50" step="3" value="1" required="true" /></div>
-                            </div>
-                            <div class="col-xs-1 col-xl-1 op">
-                                <a href="#"><span class="fa fa-trash"></span></a>
-                            </div>
+                <div class="btn-group btn-group-justified">
+                    <div class="row no-gutters">
+                        <div class="col-sm-6 col-md-8 col-lg-8 active " style="padding: 3px; padding-left: 0;">
+                            <a class="btn btn-default">Tutte le verifiche sono soddisfatte</a>
                         </div>
-                        <div class="row row-eq-height no-gutters">
-                            <div class="col-xs-8 col-xl-9 description">
-                                <h6 class="title">Controsoffitto modulare ispezionbile REI 120 su solaio Predarelles 5 +15+5cm; rivestimeto: pannelli in fibra mierale AMF THERMATEX 600x600x15cm</h6>
-                                <p class="info">
-                                    Soffitto modulare ispezionabile in pannelli di fibra minerale AMF THERMATEX 600x600x15cm su orditura metallica seminascosta posta a 20cm dall'ala delle travi; rapporto n. 2527272342/3131FR
-                                </p>
-                            </div>
-                            <div class="col-xs-3 col-xl-2 quote">
-                                <div>Q.t&agrave; mq<sup>2</sup><br /><br /><input id="intNumberStep3" type="number" min="10" max="50" step="3" value="1" required="true" /></div>
-                            </div>
-                            <div class="col-xs-1 col-xl-1 op">
-                                <a href="#"><span class="fa fa-trash"></span></a>
-                            </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4 last" style="padding: 3px; padding-right: 0;">
+                            <a class="btn btn-success">SLU</a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4" style="padding: 3px; padding-left: 0;">
+                            <a class="btn btn-success">SLS-SLD</a>
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-8 active" style="padding: 3px; padding-right: 0;">
+                            <a class="btn btn-default">SLV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-editor">
+                    <table class="table table-feature equal-cell-width">
+                        <tr>
+                            <td colspan="8">
+                                <h4>Verifiche di resistenza e stabilit&agrave;</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <h5>Faccia compressa</h5>
+                            </td>
+                            <td colspan="2">
+                                <h5>SLU</h5>
+                            </td>
+                            <td colspan="2">
+                                <h5>SLV</h5>
+                            </td>
+                        </tr>
+                        <tr class="feature-setting">
+                            <td colspan="4">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <h5>A</h5>
+                            </td>
+                            <td>
+                                <h5>B</h5>
+                            </td>
+                            <td>
+                                <h5>A</h5>
+                            </td>
+                            <td>
+                                <h5>B</h5>
+                            </td>
+                        </tr>
+                        <tr class="feature-setting">
+                            <td colspan="4">
+                                Snellezza sezione lorda (faccia compressa) check  150
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" >
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group init">
+                            <td colspan="4">
+                                1) Verifiche sezione composta
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                1.1) Profilati metallici
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                MSd [Nmm]
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                NSd [N]
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                VSd [N]
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                Sollecitazioni resistenti
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                MRd [Nmm]
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td >
+                                <input type="text" value="0,000">
+                            </td>
+                            <td >
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                NRd [N]
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting"> <!-- l'ultimo non ha la classe feature-group perchè al prossimo tr si rinizializza la classe stessa -->
+                            <td colspan="4">
+                                VRd [N]
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000" class="grey">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                1.2) Laste in gesso
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                Tensione lastra interna [N/mmq]
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                ratio
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td colspan="4">
+                                Tensione lastra media [N/mmq]
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting"> <!-- l'ultimo non ha la classe feature-group perchè al prossimo tr si rinizializza la classe stessa -->
+                            <td colspan="4">
+                                ratio
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                            <td>
+                                <input type="text" value="0,000">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row no-gutters row-eq-height gap">
+                    <div class="col-sm-6">
+                        <div class="feature-editor">
+                            <table class="table table-feature equal-cell-width">
+                                <tr>
+                                    <td colspan="3">
+                                        <h4>Verifiche di deformit&agrave;</h4>
+                                    </td>
+                                </tr>
+                                <tr class="feature-setting feature-group">
+                                    <td>
+                                        Freccia [mm]
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000">
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000">
+                                    </td>
+                                </tr>
+                                <tr class="feature-setting feature-group">
+                                    <td>
+                                        Rapporto H/f
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000">
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000">
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="feature-editor">
+                            <table class="table table-feature equal-cell-width">
+                                <tr>
+                                    <td colspan="3">
+                                        <h4>Azioni sugli ancoraggi</h4>
+                                    </td>
+                                </tr>
+                                <tr class="feature-setting feature-group">
+                                    <td colspan="2">
+                                        Taglio massimo sull'ancoraggio sup. [N]
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000">
+                                    </td>
+                                </tr>
+                                <tr class="feature-setting feature-group">
+                                    <td colspan="2">
+                                        Taglio massimo sull'ancoraggio inf. [N]
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000" class="grey">
+                                    </td>
+                                </tr>
+                                <tr class="feature-setting">
+                                    <td colspan="2">
+                                        Azione assiale sugli ancoraggi [N]
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000">
+                                    </td>
+                                </tr>
+                                <tr class="feature-setting feature-group">
+                                    <td colspan="2">
+                                        Taglio massimo sull'ancoraggio sup. [N/m]
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000">
+                                    </td>
+                                </tr>
+                                <tr class="feature-setting feature-group">
+                                    <td colspan="2">
+                                        Taglio massimo sull'ancoraggio inf. [N/m]
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000" class="grey">
+                                    </td>
+                                </tr>
+                                <tr class="feature-setting">
+                                    <td colspan="2">
+                                        Azione assiale sugli ancoraggi [N/m]
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0,000">
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>

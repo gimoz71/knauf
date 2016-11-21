@@ -16,8 +16,9 @@
 // colori ufficiali
 
 $body-color: #2790CF;
+$verifiche-color: #7EBC49;
 $text-default-color: $body-color;
-$sub-content-color: #CDE9F7;
+$sub-content-color: lighten($body-color, 40);
 $content-color: #fff;
 $tab-default-color: #efefef;
 
