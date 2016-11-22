@@ -11856,6 +11856,7 @@ table {
 }
 .table-feature td,
 .table-feature th {
+  position: relative;
   padding: 5px;
   border-top: none !important;
   border-bottom: 1px solid #efefef;
@@ -11980,6 +11981,12 @@ img {
 }
 .radio-verifiche input[type="radio"]:checked + label::after {
   background-color: #7EBC49;
+}
+
+.radio-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /*-------------------------------*/
@@ -12467,6 +12474,9 @@ img {
   opacity: 1;
 }
 .colonnaDX .project-navbar {
+  background: #cde6f5;
+}
+.colonnaDX .project-navbar > div {
   background: #2790CF;
 }
 .colonnaDX .project-navbar .active > a {
