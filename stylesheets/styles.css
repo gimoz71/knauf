@@ -11984,9 +11984,17 @@ img {
 }
 
 .radio-image {
-  position: absolute;
-  top: 10px;
+  margin: 0;
+}
+.radio-image label::before {
   right: 10px;
+  top: 10px;
+  left: auto;
+}
+.radio-image label::after {
+  right: 12px;
+  top: 12px;
+  left: auto;
 }
 
 /*-------------------------------*/

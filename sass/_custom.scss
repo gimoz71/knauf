@@ -329,9 +329,20 @@ img {
 @include radio-variant( '.radio-verifiche', $verifiche-color);
 
 .radio-image {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    margin: 0;
+    // position: absolute;
+    // top: 10px;
+    // right: 10px;
+    label::before {
+        right: 10px;
+        top: 10px;
+        left: auto;
+    }
+    label::after {
+        right: 12px;
+        top: 12px;
+        left: auto;
+    }
 }
 /*-------------------------------*/
 /*  @group Splash                */
