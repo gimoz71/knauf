@@ -137,6 +137,23 @@
     overflow: auto;
 }
 
+/* allineamento testo */
+
+.tleft {
+    text-align: left;
+}
+.tright {
+    text-align: right;
+}
+.tcenter {
+    text-align: center;
+}
+.tjustify {
+    text-align: justify;
+}
+.tinherit {
+    text-align: inherit;
+}
 
 table {
     width: 100%;
