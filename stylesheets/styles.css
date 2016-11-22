@@ -11986,6 +11986,9 @@ img {
 .radio-image {
   margin: 0;
 }
+.radio-image label {
+  padding: 0;
+}
 .radio-image label::before {
   right: 10px;
   top: 10px;
@@ -11995,6 +11998,9 @@ img {
   right: 12px;
   top: 12px;
   left: auto;
+}
+.radio-image img {
+  vertical-align: baseline;
 }
 
 /*-------------------------------*/
