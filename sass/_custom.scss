@@ -82,6 +82,32 @@
         }
     }
 }
+.btn-square {
+    position: relative;
+    display: inline-block;
+    width: 132px;
+    height: 132px;
+    border: solid 10px $sub-content-color;
+    @media (max-width: $screen-sm ) {
+        width: 90px;
+        height: 90px;
+    }
+    span {
+        @extend h4;
+        margin: 0;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: .5em;
+        left: 0;
+        @media (max-width: $screen-sm ) {
+            bottom: 0em;
+        }
+    }
+    &:hover, .active {
+        border-color: $verifiche-color;
+    }
+}
 // @media (max-width: $screen-lg) {
 //
 //   [class*="col-"]{
@@ -140,21 +166,29 @@
 /* allineamento testo */
 
 .tleft {
-    text-align: left;
+    text-align: left !important;
 }
 .tright {
-    text-align: right;
+    text-align: right !important;
 }
 .tcenter {
-    text-align: center;
+    text-align: center !important;
 }
 .tjustify {
-    text-align: justify;
+    text-align: justify !important;
 }
 .tinherit {
-    text-align: inherit;
+    text-align: inherit !important;
 }
-
+.tmiddle {
+    vertical-align: middle !important;
+}
+.tbottom {
+    vertical-align: bottom !important;
+}
+.ttop {
+    vertical-align: top !important;
+}
 table {
     width: 100%;
 }
@@ -189,9 +223,14 @@ table {
         }
     }
 
-    tr:last-of-type {
-        td {
-            border-bottom: none;
+    tr {
+        .cat-title {
+            background-color: rgba($tab-default-color, .25);
+        }
+        &:last-of-type {
+            td {
+                border-bottom: none;
+            }
         }
     }
 
@@ -411,6 +450,9 @@ img {
     background   : $content-color;
     padding      : 15px 0;
     margin-bottom: 20px;
+    > div {
+        margin-bottom: 20px;
+    }
 }
 
 .overlay {

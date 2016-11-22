@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KNAUF - Generatore di Capitolati</title>
+    <meta name="description" content="Knauf. Generatore di Capitolati.">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="Knauf. Generatore di Capitolati.">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2790cf">
+    <meta name="msapplication-TileColor" content="#2790cf">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,600,700" rel="stylesheet">
+    <!-- <link href="stylesheets/soon.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <style type="text/css">
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body class="pagina-scheda">
+    <!-- testata -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="header-logo" href="catalogo-home.html">KNAUF</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-user"><a href="#">Luciano Luciani</a></li>
+                    <li class="nav-iconitem"><a href="#" class="nav-iconitem__icon icon-storico">Storico progetti</a></li>
+                    <li class="nav-iconitem"><a href="#" class="nav-iconitem__icon icon-identificativi">Identificativi</a></li>
+                    <li class="nav-iconitem"><a href="#" class="nav-iconitem__icon icon-riferimenti-normativi">Riferimenti normativi</a></li>
+                    <li class="nav-iconitem"><a href="#" class="nav-iconitem__icon icon-menu">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fine testata -->
+
+    <!-- corpo -->
+    <div class="container content parentOverflowContainer">
+        <!-- lista catalogo LATO SX -->
+        <div class="col-md-6 col-xl-4 colonnaSX">
+            <nav class="project-navbar otherOneOverflowSX">
+                <div class="col-sm-3 active">
+                    <a href="catalogo-scheda-vento.html" class="project-navbar-voice">Vento</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="catalogo-scheda-sisma.html" class="project-navbar-voice">Sisma</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="catalogo-scheda-folla.html" class="project-navbar-voice">Folla</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="catalogo-scheda.html" class="project-navbar-voice">parete</a>
+                </div>
+            </nav>
+            <!-- <h3 class="cat-list-title otherOneOverflowSX">Catalogo</h3> -->
+            <div class="row no-gutters sub-content-container overflowContainerSX">
+                <div class="sub-content">
+                    <table class="table table-feature equal-cell-width">
+                        <tr>
+                            <td>
+                                <h4>Individuazione geografica della localit&Agrave;</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tab-images">
+                                <img src="images/mappa-italia.jpg" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-feature equal-cell-width">
+                        <tr>
+                            <td>
+                                <h4>Condizioni orografiche del sito</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td class="tleft">
+                                            <div class="radio radio-verifiche">
+                                                <input type="radio" name="condizioni-orografiche" id="radio1" value="option2">
+                                                <label for="radio1">
+                                                    Orografia pianeggiante (ct=1)
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tleft">
+                                            <div class="radio radio-verifiche">
+                                                <input type="radio" name="condizioni-orografiche" id="radio2" value="option2">
+                                                <label for="radio2">
+                                                    Sommit&agrave; di pendii isolati
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tleft">
+                                            <div class="radio radio-verifiche">
+                                                <input type="radio" name="condizioni-orografiche" id="radio3" value="option2">
+                                                <label for="radio3">
+                                                    Fronte esposto al vendo di pendii o colline
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tab-images">
+                                <img src="images/condizioni-orografiche.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td class="tright">
+                                            H [m] =
+                                        </td>
+                                        <td class="tleft">
+                                            <input type="text" value="0,000" class="discrete" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tright">
+                                            Lu [m] =
+                                        </td>
+                                        <td class="tleft">
+                                            <input type="text" value="0,000" class="discrete" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tright">
+                                            x [m] =
+                                        </td>
+                                        <td class="tleft">
+                                            <input type="text" value="0,000" class="discrete" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tab-note">
+                                Questi tre valori intervengono solo in caso di scelta di opzione diversa da "orografia pianeggiante".
+                            </td>
+                        </tr>
+
+                    </table>
+                    <table class="table table-feature">
+                        <tr>
+                            <td>
+                                <h4>Condizioni orografiche del sito</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr class="tleft">
+                                        <td class="tmiddle">
+                                            <a  href="#" class="btn-square">
+                                                <img src="images/condizioni-orografiche-a.jpg" />
+                                                <span>A</span>
+                                            </a>
+                                        </td>
+                                        <td class="tmiddle">
+                                            Aree urbane in cui almeno il 15% della superficie sia coperto da edifici la cui altezza media superi i 15m.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr class="tleft">
+                                        <td class="tmiddle">
+                                            <a  href="#" class="btn-square">
+                                                <img src="images/condizioni-orografiche-b.jpg" />
+                                                <span>B</span>
+                                            </a>
+                                        </td>
+                                        <td class="tmiddle">
+                                            Aree urbane (non di classe A), suburbane, industriali e boschive.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr class="tleft">
+                                        <td class="tmiddle">
+                                            <a  href="#" class="btn-square">
+                                                <img src="images/condizioni-orografiche-c.jpg" />
+                                                <span>C</span>
+                                            </a>
+                                        </td>
+                                        <td class="tmiddle">
+                                            Aree con ostacoli diffusi (alberi, case, muri, recinzioni,...); aree con rugosità non riconducibili alle clasi A, B, C.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr class="tleft">
+                                        <td class="tmiddle">
+                                            <a  href="#" class="btn-square">
+                                                <img src="images/condizioni-orografiche-d.jpg" />
+                                                <span>D</span>
+                                            </a>
+                                        </td>
+                                        <td class="tmiddle">
+                                            Aree prive di ostacoli (aperta campagna, aeroporti, aree agricole, pascoli, zone paludose o sabbiose, superfici innevate o ghiacciate, mase, lagni,...).
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-feature equal-cell-width">
+                        <tr>
+                            <td>
+                                <h4>Caratteristiche della costruzione</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td class="tright">
+                                            Altezza, z [m]
+                                        </td>
+                                        <td class="tleft">
+                                            <input type="text" value="0,000" class="discrete" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tright">
+                                            Coefficiente dinamico, Cd [m]
+                                        </td>
+                                        <td class="tleft">
+                                            <input type="text" value="0,000" class="discrete" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tleft">
+                                <h5>Permeabilit&agrave;</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tleft">
+                                <div class="radio radio-verifiche">
+                                    <input type="radio" name="caratteristiche-costruzione" id="radio4" value="option2">
+                                    <label for="radio4">
+                                        Costruzione stagna.
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tleft">
+                                <div class="radio radio-verifiche">
+                                    <input type="radio" name="caratteristiche-costruzione" id="radio5" value="option2">
+                                    <label for="radio5">
+                                        Costruzione con parete con superficie < 1/3 di quella totale.
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tleft">
+                                <div class="radio radio-verifiche">
+                                    <input type="radio" name="caratteristiche-costruzione" id="radio6" value="option2">
+                                    <label for="radio6">
+                                        Costruzione con parete con apertura doi superficie > di 1/3 di quella totale.
+                                    </label>
+                                </div>
+                            </td>
+                        <tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- fine lista catalogo -->
+
+        <!-- visione contenuti tab LATO DX -->
+        <div class="col-md-6 col-xl-8 colonnaDX">
+            <nav class="project-navbar otherOneOverflowDX">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <a href="catalogo-home.html" class="project-navbar-voice active">prosegui</a>
+                </div>
+                <div class="col-sm-6 col-md-8 col-lg-8 active impostazioni">
+                    <a class="project-navbar-voice"><span class="fa fa-chevron-down"></span> Impostazioni verifiche</a>
+                </div>
+            </nav>
+            <div class="cat-content overflowContainerDX">
+                <div class="feature-editor">
+                    <table class="table table-feature equal-cell-width tright">
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                catgoria = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                Kr = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                Z0 = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                Zmin = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                velocit&agrave; de vento Vref [m/s] = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                pressione cinetica del vento qref [N/m<sup>2</sup>] = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                coefficiente di potografia Ct = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                coefficiente dinamico Cd = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                coefficiente di esposizione = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                entit&agrave; dell'azione del vento qref Cd Ce Cpe [N/m<sup>2</sup>] = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                vento in pressione (parete esterna) qref Cd Ce Cpe, pres [N/m<sup>2</sup>] = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                vento in pressione (parete esterna) qref Cd Ce Cpe, depr [N/m<sup>2</sup>] = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                azione del vento (parete interna) qref Cd Ce Cpi [N/m<sup>2</sup>] = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- <div class="editor" style="background: #fff;">
+                        gdfgfdgfdgdfgfd
+                    </div> -->
+            </div>
+            <!-- <div class="btn-group btn-group-justified otherOneOverflowLastDX">
+                <a href="#" class="btn btn-primary with-icon"><span class="icon icon-salva"></span> Salva</a>
+                <a href="#" class="btn btn-primary with-icon"><span class="icon icon-annulla"></span> Annulla</a>
+                <a href="#" class="btn btn-primary with-icon"><span class="icon icon-anteprima"></span> Anteprima</a>
+                <a href="#" class="btn btn-primary with-icon"><span class="icon icon-riepilogo"></span> Riepilogo prezzi</a>
+            </div> -->
+        </div>
+        <!-- fine visione contenuti tab -->
+    </div>
+    <!-- fine corpo -->
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.js"></script>
+    <script src="javascripts/holder.js"></script>
+    <script src="javascripts/custom.js"></script>
+</body>
+
+</html>

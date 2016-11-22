@@ -73,7 +73,7 @@
                     <a href="catalogo-scheda-vento.html" class="project-navbar-voice">Vento</a>
                 </div>
                 <div class="col-sm-3 active">
-                    <a href="#" class="project-navbar-voice">Sisma</a>
+                    <a href="catalogo-scheda-sisma.html" class="project-navbar-voice">Sisma</a>
                 </div>
                 <div class="col-sm-3">
                     <a href="catalogo-scheda-folla.html" class="project-navbar-voice">Folla</a>
@@ -184,7 +184,7 @@
                         </tr>
                         <tr>
                             <td >
-                                Permanenti portati [N/m2] <input type="text" value="0,000" class="discrete" />
+                                Permanenti portati [N/m<sup>2</sup>] <input type="text" value="0,000" class="discrete" />
                             </td>
                         </tr>
                     </table>
@@ -192,7 +192,7 @@
             </div>
         </div>
         <!-- fine lista catalogo -->
-        <div class="clearfix visible-xs-block visible-sm-block" style="height: 20px;"></div>
+
         <!-- visione contenuti tab LATO DX -->
         <div class="col-md-6 col-xl-8 colonnaDX">
             <nav class="project-navbar otherOneOverflowDX">
@@ -204,394 +204,104 @@
                 </div>
             </nav>
             <div class="cat-content overflowContainerDX">
-                <div class="btn-group btn-group-justified">
-                    <div class="row no-gutters">
-                        <div class="col-sm-6 col-md-8 col-lg-8 active " style="padding: 3px; padding-left: 0;">
-                            <a class="btn btn-default">Tutte le verifiche sono soddisfatte</a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4 last" style="padding: 3px; padding-right: 0;">
-                            <a class="btn btn-success">SLU</a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4" style="padding: 3px; padding-left: 0;">
-                            <a class="btn btn-success">SLS-SLD</a>
-                        </div>
-                        <div class="col-sm-6 col-md-8 col-lg-8 active" style="padding: 3px; padding-right: 0;">
-                            <a class="btn btn-default">SLV</a>
-                        </div>
-                    </div>
-                </div>
                 <div class="feature-editor">
-                    <table class="table table-feature equal-cell-width">
-                        <tr>
-                            <td colspan="8">
-                                <h4>Verifiche di resistenza e stabilit&agrave;</h4>
+                    <table class="table table-feature equal-cell-width tright">
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                Carichi pe runit&agrave; di superficie
                             </td>
                         </tr>
-                        <tr>
-                            <td colspan="4">
-                                <h5>Faccia compressa</h5>
-                            </td>
-                            <td colspan="2">
-                                <h5>SLU</h5>
-                            </td>
-                            <td colspan="2">
-                                <h5>SLV</h5>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                Peso lastre faccia A [N/m<sup>2</sup>] = <input type="text" value="0,000" class="grey discrete">
                             </td>
                         </tr>
                         <tr class="feature-setting">
-                            <td colspan="4">
-                                &nbsp;
-                            </td>
                             <td>
-                                <h5>A</h5>
+                                Peso lastre faccia B [N/m<sup>2</sup>] = <input type="text" value="0,000" class="grey discrete">
                             </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
                             <td>
-                                <h5>B</h5>
+                                Carichi risultanti
                             </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
                             <td>
-                                <h5>A</h5>
+                                Peso profili metallici [Np>] = <input type="text" value="0,000" class="grey discrete">
                             </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
                             <td>
-                                <h5>B</h5>
+                                Peso lastre faccia A [N] = <input type="text" value="0,000" class="grey discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                Peso lastre faccia B [N] = <input type="text" value="0,000" class="discrete">
+                            </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
+                            <td>
+                                parametri portati = <input type="text" value="0,000" class="grey discrete">
                             </td>
                         </tr>
                         <tr class="feature-setting">
-                            <td colspan="4">
-                                Snellezza sezione lorda (faccia compressa) check 150
-                            </td>
                             <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
+                                Peso totale = <input type="text" value="0,000" class="grey discrete">
                             </td>
                         </tr>
                         <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                1) Verifiche sezione composta
-                            </td>
                             <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
+                                SLV
                             </td>
                         </tr>
                         <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                1.1) Profilati metallici
-                            </td>
                             <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
+                                qa = <input type="text" value="0,000" class="grey discrete">
                             </td>
                         </tr>
                         <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                MSd [Nmm]
-                            </td>
                             <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                        </tr>
-                        <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                NSd [N]
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                        </tr>
-                        <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                VSd [N]
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                        </tr>
-                        <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                Sollecitazioni resistenti
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                MRd [Nmm]
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                        </tr>
-                        <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                NRd [N]
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
+                                Sa = <input type="text" value="0,000" class="discrete">
                             </td>
                         </tr>
                         <tr class="feature-setting">
-                            <!-- l'ultimo non ha la classe feature-group perchè al prossimo tr si rinizializza la classe stessa -->
-                            <td colspan="4">
-                                VRd [N]
-                            </td>
                             <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000" class="grey">
+                                Azione sismica risultante Fa [N] = <input type="text" value="0,000" class="grey discrete">
                             </td>
                         </tr>
                         <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                1.2) Laste in gesso
-                            </td>
                             <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
+                                SLD
                             </td>
                         </tr>
                         <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                Tensione lastra interna [N/mmq]
-                            </td>
                             <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
+                                qa = <input type="text" value="0,000" class="grey discrete">
                             </td>
                         </tr>
                         <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                ratio
-                            </td>
                             <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                        </tr>
-                        <tr class="feature-setting feature-group">
-                            <td colspan="4">
-                                Tensione lastra media [N/mmq]
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
+                                Sa = <input type="text" value="0,000" class="grey discrete">
                             </td>
                         </tr>
                         <tr class="feature-setting">
-                            <!-- l'ultimo non ha la classe feature-group perchè al prossimo tr si rinizializza la classe stessa -->
-                            <td colspan="4">
-                                ratio
-                            </td>
                             <td>
-                                <input type="text" value="0,000">
+                                Azione sismica risultante Fa [N] = <input type="text" value="0,000" class="grey discrete">
                             </td>
+                        </tr>
+                        <tr class="feature-setting feature-group">
                             <td>
-                                <input type="text" value="0,000">
+                                Periodo fondamentale di vibrazione della parete
                             </td>
+                        </tr>
+                        <tr class="feature-setting">
                             <td>
-                                <input type="text" value="0,000">
-                            </td>
-                            <td>
-                                <input type="text" value="0,000">
+                                Ta [sec] = <input type="text" value="0,000" class="discrete">
                             </td>
                         </tr>
                     </table>
-                </div>
-                <div class="row no-gutters gap">
-                    <div class="col-sm-6">
-                        <div class="feature-editor">
-                            <table class="table table-feature equal-cell-width">
-                                <tr>
-                                    <td colspan="3">
-                                        <h4>Verifiche di deformit&agrave;</h4>
-                                    </td>
-                                </tr>
-                                <tr class="feature-setting feature-group">
-                                    <td>
-                                        Freccia [mm]
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                </tr>
-                                <tr class="feature-setting feature-group">
-                                    <td>
-                                        Rapporto H/f
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="feature-editor">
-                            <table class="table table-feature equal-cell-width">
-                                <tr>
-                                    <td colspan="3">
-                                        <h4>Azioni sugli ancoraggi</h4>
-                                    </td>
-                                </tr>
-                                <tr class="feature-setting feature-group">
-                                    <td colspan="2">
-                                        Taglio massimo sull'ancoraggio sup. [N]
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                </tr>
-                                <tr class="feature-setting feature-group">
-                                    <td colspan="2">
-                                        Taglio massimo sull'ancoraggio inf. [N]
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                </tr>
-                                <tr class="feature-setting ">
-                                    <td colspan="2">
-                                        Azione assiale sull'ancoraggio. [N]
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                </tr>
-
-                                <tr class="feature-setting feature-group">
-                                    <td colspan="2">
-                                        Taglio massimo sull'ancoraggio sup. [N/m]
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                </tr>
-                                <tr class="feature-setting feature-group">
-                                    <td colspan="2">
-                                        Taglio massimo sull'ancoraggio inf. [N/m]
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                </tr>
-                                <tr class="feature-setting ">
-                                    <td colspan="2">
-                                        Azione assiale sull'ancoraggio. [N/m]
-                                    </td>
-                                    <td>
-                                        <input type="text" value="0,000">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
                 </div>
                 <!-- <div class="editor" style="background: #fff;">
                         gdfgfdgfdgdfgfd

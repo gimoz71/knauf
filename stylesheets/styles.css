@@ -1492,7 +1492,7 @@ hr {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, .cat-list > li > a, h6,
+h1, h2, h3, h4, .btn-square span, h5, .cat-list > li > a, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -1502,8 +1502,9 @@ h1, h2, h3, h4, h5, .cat-list > li > a, h6,
 h1 small,
 h1 .small, h2 small,
 h2 .small, h3 small,
-h3 .small, h4 small,
-h4 .small, h5 small, .cat-list > li > a small,
+h3 .small, h4 small, .btn-square span small,
+h4 .small,
+.btn-square span .small, h5 small, .cat-list > li > a small,
 h5 .small,
 .cat-list > li > a .small, h6 small,
 h6 .small,
@@ -1537,15 +1538,16 @@ h3 .small, .h3 small,
   font-size: 65%;
 }
 
-h4, .h4,
+h4, .btn-square span, .h4,
 h5,
 .cat-list > li > a, .h5,
 h6, .h6 {
   margin-top: 14px;
   margin-bottom: 14px;
 }
-h4 small,
-h4 .small, .h4 small,
+h4 small, .btn-square span small,
+h4 .small,
+.btn-square span .small, .h4 small,
 .h4 .small,
 h5 small,
 .cat-list > li > a small,
@@ -1570,7 +1572,7 @@ h3, .h3 {
   font-size: 34px;
 }
 
-h4, .h4 {
+h4, .btn-square span, .h4 {
   font-size: 25px;
 }
 
@@ -5730,7 +5732,7 @@ a.thumbnail.active {
   border: 1px solid transparent;
   border-radius: 4px;
 }
-.alert h4 {
+.alert h4, .alert .btn-square span, .btn-square .alert span {
   margin-top: 0;
   color: inherit;
 }
@@ -11730,6 +11732,36 @@ input[type="radio"] .styled:checked + label::after {
   }
 }
 
+.btn-square {
+  position: relative;
+  display: inline-block;
+  width: 132px;
+  height: 132px;
+  border: solid 10px #cde6f5;
+}
+@media (max-width: 768px) {
+  .btn-square {
+    width: 90px;
+    height: 90px;
+  }
+}
+.btn-square span {
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: .5em;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .btn-square span {
+    bottom: 0em;
+  }
+}
+.btn-square:hover, .btn-square .active {
+  border-color: #7EBC49;
+}
+
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -11771,23 +11803,35 @@ input[type="radio"] .styled:checked + label::after {
 
 /* allineamento testo */
 .tleft {
-  text-align: left;
+  text-align: left !important;
 }
 
 .tright {
-  text-align: right;
+  text-align: right !important;
 }
 
 .tcenter {
-  text-align: center;
+  text-align: center !important;
 }
 
 .tjustify {
-  text-align: justify;
+  text-align: justify !important;
 }
 
 .tinherit {
-  text-align: inherit;
+  text-align: inherit !important;
+}
+
+.tmiddle {
+  vertical-align: middle !important;
+}
+
+.tbottom {
+  vertical-align: bottom !important;
+}
+
+.ttop {
+  vertical-align: top !important;
 }
 
 table {
@@ -11822,6 +11866,9 @@ table {
 .table-feature th td,
 .table-feature th th {
   border: none;
+}
+.table-feature tr .cat-title {
+  background-color: rgba(239, 239, 239, 0.25);
 }
 .table-feature tr:last-of-type td {
   border-bottom: none;
@@ -11915,7 +11962,7 @@ body {
   padding-top: 73px;
 }
 
-h1, h2, h3, h4, h5, .cat-list > li > a, h6 {
+h1, h2, h3, h4, .btn-square span, h5, .cat-list > li > a, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -12080,6 +12127,9 @@ img {
 .content {
   background: #fff;
   padding: 15px 0;
+  margin-bottom: 20px;
+}
+.content > div {
   margin-bottom: 20px;
 }
 
