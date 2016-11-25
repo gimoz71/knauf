@@ -12017,40 +12017,45 @@ img {
   height: auto;
   position: fixed;
   left: 50%;
-  margin-left: -417.5px;
-  margin-top: 150px;
+  margin-left: -217.75px;
+  margin-top: 100px;
+  background: #fff;
+  padding: 20px;
 }
 .splash-logo h1 {
   display: block;
-  width: 835px;
-  height: 485px;
-  background-image: url(/images/../images/splash-logo.png?1479216680);
+  width: 395.5px;
+  height: 230.5px;
+  background-image: url(/images/../images/splash-logo.png?1480084166);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .splash-logo h1 {
-    background-image: url(/images/../images/splash-logo@2x.png?1479216680);
-    background-size: 417.5px 242.5px;
+    background-image: url(/images/../images/splash-logo@2x.png?1480084173);
+    background-size: 791px 461px;
   }
 }
-
-@media (max-width: 992px) {
-  .splash-logo {
-    margin-left: -208.75px;
-  }
-  .splash-logo h1 {
-    width: 417.5px;
-    height: 242.5px;
-    background-image: url(/images/../images/splash-logo.png?1479216680);
-  }
+.splash-logo input {
+  width: 100%;
+  border: none;
+  background-color: #cde6f5;
+  padding: 3px 7px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-top: 15px;
+  text-align: center;
 }
-@media only screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 992px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 992px) and (min-device-pixel-ratio: 2), only screen and (max-width: 992px) and (min-resolution: 192dpi), only screen and (max-width: 992px) and (min-resolution: 2dppx) {
-  .splash-logo h1 {
-    background-image: url(/images/../images/splash-logo@2x.png?1479216680);
-    background-size: 417.5px 242.5px;
-  }
+.splash-logo button {
+  margin-top: 15px;
+}
+.splash-logo .psw-recover {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: .85em;
 }
 
 /*-------------------------------*/
@@ -12080,23 +12085,6 @@ img {
   .header-logo {
     background-image: url(/images/../images/logo@2x.png?1479224098);
     background-size: 154px 73px;
-  }
-}
-
-@media (max-width: 992px) {
-  .splash-logo {
-    margin-left: -208.75px;
-  }
-  .splash-logo h1 {
-    width: 417.5px;
-    height: 242.5px;
-    background-image: url(/images/../images/splash-logo.png?1479216680);
-  }
-}
-@media only screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 992px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 992px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 992px) and (min-device-pixel-ratio: 2), only screen and (max-width: 992px) and (min-resolution: 192dpi), only screen and (max-width: 992px) and (min-resolution: 2dppx) {
-  .splash-logo h1 {
-    background-image: url(/images/../images/splash-logo@2x.png?1479216680);
-    background-size: 417.5px 242.5px;
   }
 }
 

@@ -364,31 +364,54 @@ img {
     height     : auto;
     position   : fixed;
     left       : 50%;
-    margin-left: -(835px / 2);
-    margin-top : 150px;
-
+    margin-left: -(871px / 4);
+    margin-top : 100px;
+    background: $content-color;
+    padding: 20px;
     h1 {
         display            : block;
-        width              : 835px;
-        height             : 485px;
-        @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 417.5px, 242.5px);
+        width              : (791px / 2);
+        height             : (461px /2);
+        @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 791px, 461px);
         background-position: center top;
         background-repeat  : no-repeat;
         background-size    : cover;
         @extend .text-hide;
+        margin: 0;
+    }
+    input {
+        width                : 100%;
+        border               : none;
+        background-color     : $sub-content-color;
+        padding              : 3px 7px;
+        // text-align           : right;
+        -webkit-border-radius: 0;
+        -moz-border-radius   : 0;
+        border-radius        : 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+    button {
+        margin-top: 15px;
+    }
+    .psw-recover {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: .85em;
     }
 }
-@media (max-width: $screen-md) {
-    .splash-logo {
-        margin-left: -(835px / 4);
-
-        h1 {
-            width : (835px / 2);
-            height: (485px / 2);
-            @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 417.5px, 242.5px);
-        }
-    }
-}
+// @media (max-width: $screen-md) {
+//     .splash-logo {
+//         margin-left: -(871px / 4);
+//
+//         h1 {
+//             width : (791px / 2);
+//             height: (461px / 2);
+//         }
+//         input {
+//         }
+//     }
+// }
 /*-------------------------------*/
 /*  @end Splash               */
 /*-------------------------------*/
@@ -412,17 +435,7 @@ img {
     margin             : 0 !important;
     // height: 73px;
 }
-@media (max-width: $screen-md) {
-    .splash-logo {
-        margin-left: -(835px / 4);
 
-        h1 {
-            width : (835px / 2);
-            height: (485px / 2);
-            @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 417.5px, 242.5px);
-        }
-    }
-}
 /* nav */
 .nav > li.nav-iconitem > a {
     display: inline-block;
