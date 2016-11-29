@@ -227,31 +227,34 @@
 
         <!-- visione contenuti tab LATO DX -->
         <div class="col-md-6 col-xl-8 colonnaDX">
-            <nav class="project-navbar otherOneOverflowDX">
+            <div class="otherOneOverflowDX">
+
+            <nav class="project-navbar">
                 <div class="col-sm-6 col-md-4 col-lg-4">
                     <a href="catalogo-home.html" class="project-navbar-voice active">prosegui</a>
                 </div>
                 <div class="col-sm-6 col-md-8 col-lg-8 active impostazioni">
-                    <a class="project-navbar-voice"><span class="fa fa-chevron-down"></span> Impostazioni verifiche</a>
+                    <a class="project-navbar-voice"><span class="fa fa-chevron-down"></span> Impostazioni <span class="fa fa-cog"></span></a>
                 </div>
             </nav>
-            <div class="cat-content overflowContainerDX">
-                <div class="btn-group btn-group-justified">
-                    <div class="row no-gutters">
-                        <div class="col-sm-6 col-md-8 col-lg-8 active " style="padding: 3px; padding-left: 0;">
-                            <a class="btn btn-default">Tutte le verifiche sono soddisfatte</a>
+            <div class="semafori-verifiche">
+                <div class="row no-gutters">
+                    <div class="col-sm-3">
+                        <span class="semaforo">COMPLETO</span>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="semaforo active">SLU</span>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="semaforo">SLS-SLD</a>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4 last" style="padding: 3px; padding-right: 0;">
-                            <a class="btn btn-success">SLU</a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-4" style="padding: 3px; padding-left: 0;">
-                            <a class="btn btn-success">SLS-SLD</a>
-                        </div>
-                        <div class="col-sm-6 col-md-8 col-lg-8 active" style="padding: 3px; padding-right: 0;">
-                            <a class="btn btn-default">SLV</a>
+                        <div class="col-sm-3">
+                            <pan class="semaforo active last">SLV</pan>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="cat-content overflowContainerDX">
                 <div class="feature-editor">
                     <table class="table table-feature equal-cell-width">
                         <tr>
