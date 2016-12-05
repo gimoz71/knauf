@@ -11244,6 +11244,10 @@ input[type="radio"] .styled:checked + label::after {
   content: "W";
   text-transform: initial;
 }
+.icon.icon-certificazioni:after {
+  content: "é";
+  text-transform: initial;
+}
 
 /* @group ICONE PRINCIPALI */
 .icon-pareti {
