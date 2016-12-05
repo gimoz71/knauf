@@ -11460,13 +11460,13 @@ input[type="radio"] .styled:checked + label::after {
 /* @fine ICONE pareti */
 /* @group ICONE contropareti */
 .icon-contropareti-soluzioni-base {
-  background-image: url(/images/../images/icon-contropareti-soluzioni-base.png);
+  background-image: url(/images/../images/icon-contropareti-soluzioni-base.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-contropareti-soluzioni-base {
-    background-image: url(/images/../images/icon-contropareti-soluzioni-base@2x.png);
+    background-image: url(/images/../images/icon-contropareti-soluzioni-base@2x.png?1479577171);
     background-size: 54px 48px;
   }
 }
@@ -11657,14 +11657,14 @@ input[type="radio"] .styled:checked + label::after {
   }
 }
 
-.icon-aquapanel-controsoffitto {
-  background-image: url(/images/../images/icon-aquapanel-controsoffitto.png);
+.icon-aquapanel-controsoffitto-esterno {
+  background-image: url(/images/../images/icon-aquapanel-controsoffitto-esterno.png?1479565069);
   background-position: center center;
   background-repeat: no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .icon-aquapanel-controsoffitto {
-    background-image: url(/images/../images/icon-aquapanel-controsoffitto@2x.png);
+  .icon-aquapanel-controsoffitto-esterno {
+    background-image: url(/images/../images/icon-aquapanel-controsoffitto-esterno@2x.png?1479577171);
     background-size: 61px 50px;
   }
 }
@@ -11682,6 +11682,66 @@ input[type="radio"] .styled:checked + label::after {
 }
 
 /* @fine ICONE aquapanel */
+.icon-sistema-cappotto-termico-submenu {
+  background-image: url(/images/../images/icon-sistema-cappotto-termico-submenu.png?1480949757);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-sistema-cappotto-termico-submenu {
+    background-image: url(/images/../images/icon-sistema-cappotto-termico-submenu@2x.png?1480949741);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-sottofondi-secco-submenu {
+  background-image: url(/images/../images/icon-sottofondi-secco-submenu.png?1480949757);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-sottofondi-secco-submenu {
+    background-image: url(/images/../images/icon-sottofondi-secco-submenu@2x.png?1480949741);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-pavimenti-sopraelevati-submenu {
+  background-image: url(/images/../images/icon-pavimenti-sopraelevati-submenu.png?1480949757);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-pavimenti-sopraelevati-submenu {
+    background-image: url(/images/../images/icon-pavimenti-sopraelevati-submenu@2x.png?1480949741);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-trattamenti-superficiali-submenu {
+  background-image: url(/images/../images/icon-trattamenti-superficiali-submenu.png?1480949757);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-trattamenti-superficiali-submenu {
+    background-image: url(/images/../images/icon-trattamenti-superficiali-submenu@2x.png?1480949741);
+    background-size: 54px 47px;
+  }
+}
+
+.icon-intonaci-submenu {
+  background-image: url(/images/../images/icon-intonaci-submenu.png?1480949757);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-intonaci-submenu {
+    background-image: url(/images/../images/icon-intonaci-submenu@2x.png?1480949741);
+    background-size: 54px 47px;
+  }
+}
+
 /* @end icone Knauf */
 /*-------------------------------*/
 /* override stili bootstrap      */
@@ -12322,12 +12382,13 @@ img {
   color: #2790CF;
 }
 .cat-list.secondary > li i {
+  background-color: transparent;
   position: absolute;
   top: -1px;
   left: -1px;
   bottom: -1px;
-  border-bottom: solid 1px #cde6f5;
-  border-right: solid 1px #cde6f5;
+  border-bottom: solid 1px #efefef;
+  border-right: solid 1px #efefef;
   padding: 0 35px;
   height: 102.5%;
 }
@@ -12355,7 +12416,6 @@ img {
 }
 .cat-list.secondary .category-title a {
   border: solid 1px #fff;
-  border-bottom: none;
 }
 
 .feature {
@@ -12429,6 +12489,9 @@ img {
 }
 .feature .row > div:last-of-type {
   border-right: none;
+}
+.feature .row:last-of-type {
+  border-bottom: none;
 }
 
 .feature-container {

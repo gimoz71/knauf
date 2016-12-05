@@ -730,12 +730,13 @@ img {
             }
 
             i {
+                background-color: transparent;
                 position     : absolute;
                 top          : -1px;
                 left         : -1px;
                 bottom       : -1px;
-                border-bottom: solid 1px $sub-content-color;
-                border-right : solid 1px $sub-content-color;
+                border-bottom: solid 1px $tab-default-color;
+                border-right : solid 1px $tab-default-color;
                 padding      : 0 35px;
                 height       : 102.5%;
             }
@@ -768,7 +769,7 @@ img {
 
             a {
                 border       : solid 1px $content-color;
-                border-bottom: none;
+                // border-bottom: none;
             }
         }
     }
@@ -857,6 +858,9 @@ img {
                 border-right: none;
             }
         }
+        &:last-of-type {
+            border-bottom: none;
+        }
     }
 }
 // override stili quando nella lista category-title
@@ -866,7 +870,6 @@ img {
     margin-left : 35px !important;
     margin-right: 0 !important;
     width       : auto;
-
     .title {
         font-weight     : 800;
         background-color: $content-color !important;

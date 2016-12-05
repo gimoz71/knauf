@@ -263,8 +263,8 @@
     background-position: center center;
     background-repeat  : no-repeat;
 }
-.icon-aquapanel-controsoffitto {
-    @include img-retina("../images/icon-aquapanel-controsoffitto.png", "../images/icon-aquapanel-controsoffitto@2x.png", 61px, 50px);
+.icon-aquapanel-controsoffitto-esterno {
+    @include img-retina("../images/icon-aquapanel-controsoffitto-esterno.png", "../images/icon-aquapanel-controsoffitto-esterno@2x.png", 61px, 50px);
     background-position: center center;
     background-repeat  : no-repeat;
 }
@@ -275,3 +275,30 @@
 }
 
 /* @fine ICONE aquapanel */
+
+
+.icon-sistema-cappotto-termico-submenu {
+    @include img-retina("../images/icon-sistema-cappotto-termico-submenu.png", "../images/icon-sistema-cappotto-termico-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-sottofondi-secco-submenu {
+    @include img-retina("../images/icon-sottofondi-secco-submenu.png", "../images/icon-sottofondi-secco-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-pavimenti-sopraelevati-submenu {
+    @include img-retina("../images/icon-pavimenti-sopraelevati-submenu.png", "../images/icon-pavimenti-sopraelevati-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-trattamenti-superficiali-submenu {
+    @include img-retina("../images/icon-trattamenti-superficiali-submenu.png", "../images/icon-trattamenti-superficiali-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-intonaci-submenu {
+    @include img-retina("../images/icon-intonaci-submenu.png", "../images/icon-intonaci-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
