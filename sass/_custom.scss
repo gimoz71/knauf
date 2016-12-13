@@ -37,8 +37,41 @@
 @import "icon-custom";
 /* @end icone Knauf */
 /*-------------------------------*/
-/* override stili bootstrap      */
+/* override e aggiunte a stili bootstrap      */
 /*-------------------------------*/
+.col-lg-5,
+.col-md-5,
+.col-sm-5,
+.col-xs-5 {
+    position     : relative;
+    min-height   : 1px;
+    padding-right: 10px;
+    padding-left : 10px;
+}
+
+.col-xs-5 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
 .btn {
     border-radius: 0;
     // border-color: $content-color;
@@ -84,6 +117,10 @@
             }
         }
     }
+
+    &.btn-standard {
+        width: auto;
+    }
 }
 
 .btn-square {
@@ -123,15 +160,21 @@
 //
 // }
 
-.row.no-gutters {
-    margin-right: 0;
-    margin-left : 0;
-    width       : 100%;
+.row {
+    &.no-gutters {
+        margin-right: 0;
+        margin-left : 0;
+        width       : 100%;
 
-    & > [class*=" col-"],
-    & > [class^="col-"] {
-        padding-right: 0;
-        padding-left : 0;
+        & > [class*=" col-"],
+        & > [class^="col-"] {
+            padding-right: 0;
+            padding-left : 0;
+        }
+    }
+    &.nomargin {
+        margin-left: -10px !important;
+        margin-right: -10px !important;
     }
 }
 
@@ -201,6 +244,14 @@
 
 .ttop {
     vertical-align: top !important;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.nopadding {
+    padding: 0 !important;
 }
 
 table {
@@ -354,6 +405,7 @@ img {
     height   : auto;
 }
 @include radio-variant( '.radio-verifiche', $verifiche-color);
+@include checkbox-variant( '.checkbox-verifiche', $sub-content-color);
 
 .radio-image {
     margin: 0;
@@ -731,14 +783,14 @@ img {
 
             i {
                 background-color: transparent;
-                position     : absolute;
-                top          : -1px;
-                left         : -1px;
-                bottom       : -1px;
-                border-bottom: solid 1px $tab-default-color;
-                border-right : solid 1px $tab-default-color;
-                padding      : 0 35px;
-                height       : 102.5%;
+                position        : absolute;
+                top             : -1px;
+                left            : -1px;
+                bottom          : -1px;
+                border-bottom   : solid 1px $tab-default-color;
+                border-right    : solid 1px $tab-default-color;
+                padding         : 0 35px;
+                height          : 102.5%;
             }
 
             .fa {
@@ -768,7 +820,7 @@ img {
             }
 
             a {
-                border       : solid 1px $content-color;
+                border: solid 1px $content-color;
                 // border-bottom: none;
             }
         }
@@ -858,6 +910,7 @@ img {
                 border-right: none;
             }
         }
+
         &:last-of-type {
             border-bottom: none;
         }
@@ -870,6 +923,7 @@ img {
     margin-left : 35px !important;
     margin-right: 0 !important;
     width       : auto;
+
     .title {
         font-weight     : 800;
         background-color: $content-color !important;
@@ -942,6 +996,21 @@ img {
             // @include img-retina("../images/icon-impostazioni.png", "../images/icon-impostazioni@2x.png", 100px, 100px);
             // background-position: -15px -15px;
             // background-repeat  : no-repeat;
+        }
+    }
+
+    .voce-dettaglio & {
+        background: $tab-default-color;
+        a {
+            font-size: 1em !important;
+            text-transform: inherit;
+        }
+        .active {
+            background-color: $content-color;
+
+            > a {
+                opacity: 1;
+            }
         }
     }
 
@@ -1028,10 +1097,11 @@ img {
             color: #333 !important;
         }
     }
-
 }
+
 .semafori-verifiche {
-    margin   : 3px 0; // For input.btn
+    margin: 3px 0; // For input.btn
+
     .semaforo {
         display         : inline-block;
         font-weight     : $btn-font-weight;
@@ -1041,8 +1111,8 @@ img {
         width           : 100%;
         background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
         white-space     : nowrap;
-        color: #999;
-        border-right: solid 1px $tab-default-color;
+        color           : #999;
+        border-right    : solid 1px $tab-default-color;
         @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
         @include user-select(none);
 
@@ -1050,13 +1120,15 @@ img {
             // background: $verifiche-color;
             // color     : $content-color;
             color: $verifiche-color;
+
             &:before {
-                font-family: 'Glyphicons Halflings';
-                content: "\e013";
-                font-size: 18px;
+                font-family : 'Glyphicons Halflings';
+                content     : "\e013";
+                font-size   : 18px;
                 margin-right: 5px;
             }
         }
+
         &.last {
             border: none;
         }
@@ -1066,3 +1138,76 @@ img {
 /*--------------------------------*/
 /* @end Struttura catalogo */
 /*--------------------------------*/
+/*--------------------------------*/
+/* @group Tabella prezzi */
+/*--------------------------------*/
+.body-tabella-prezzi {
+    padding: 0;
+    .header {
+        margin: 5px 0 !important;
+        .btn-group {
+            margin-top: 10px;
+        }
+    }
+
+    .content {
+        background: $tab-default-color;
+        padding   : 0 20px;
+    }
+}
+
+.corpo-tabella-prezzi {
+    background: $content-color;
+    padding: 1px;
+}
+
+.voce-dettaglio{
+    .title {
+        display   : block;
+        width     : 100%;
+        background: $body-color;
+        margin    : 2px 0;
+        padding   : 10px;
+        color     : $content-color;
+    }
+}
+.tabella-prezzi {
+    .checkbox, .radio {
+        margin: 0;
+    }
+    padding: 10px;
+    table {
+        color: $text-default-color;
+        border-collapse: separate;
+        border-spacing: 2px;
+        label {
+            padding-left: 26px;
+        }
+        td {
+            padding: 5px;
+            &:not(.selector) {
+                font-size: .75em;
+            }
+        }
+        tr:nth-child(even) {
+            background-color: $content-color;
+            & .tot {
+                font-weight: bold;
+                background-color: lighten($sub-content-color, 5);
+            }
+        }
+        tr:nth-child(odd) {
+            background-color: $tab-default-color;
+            & .tot {
+                font-weight: bold;
+                background-color: darken($sub-content-color, 2);
+            }
+        }
+        tr:first-of-type {
+            td {
+                font-weight: bold;
+                background-color: darken($tab-default-color, 5);
+            }
+        }
+    }
+}

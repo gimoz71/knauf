@@ -10603,24 +10603,24 @@ button.close {
 }
 
 .checkbox {
-  padding-left: 20px;
+  padding-left: 0px;
 }
 .checkbox label {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  padding-left: 5px;
+  padding-left: 40px;
 }
 .checkbox label::before {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 1.3em;
+  height: 1.3em;
   left: 0;
-  margin-left: -20px;
+  margin-left: 0px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 50%;
   background-color: #fff;
   -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
   -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
@@ -10629,14 +10629,14 @@ button.close {
 .checkbox label::after {
   display: inline-block;
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 1.3em;
+  height: 1.3em;
   left: 0;
   top: 0;
-  margin-left: -20px;
+  margin-left: 0px;
   padding-left: 3px;
   padding-top: 1px;
-  font-size: 11px;
+  font-size: .9em;
   color: #555555;
 }
 .checkbox input[type="checkbox"],
@@ -11248,6 +11248,22 @@ input[type="radio"] .styled:checked + label::after {
   content: "é";
   text-transform: initial;
 }
+.icon.icon-help:after {
+  content: "?";
+  text-transform: initial;
+}
+.icon.icon-add:after {
+  content: "{";
+  text-transform: initial;
+}
+.icon.icon-up:after {
+  content: "í";
+  text-transform: initial;
+}
+.icon.icon-down:after {
+  content: "ì";
+  text-transform: initial;
+}
 
 /* @group ICONE PRINCIPALI */
 .icon-pareti {
@@ -11748,8 +11764,41 @@ input[type="radio"] .styled:checked + label::after {
 
 /* @end icone Knauf */
 /*-------------------------------*/
-/* override stili bootstrap      */
+/* override e aggiunte a stili bootstrap      */
 /*-------------------------------*/
+.col-lg-5,
+.col-md-5,
+.col-sm-5,
+.col-xs-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-5 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-5 {
+    width: 20%;
+    float: left;
+  }
+}
 .btn {
   border-radius: 0;
   width: 100%;
@@ -11795,6 +11844,9 @@ input[type="radio"] .styled:checked + label::after {
     font-size: 20px;
   }
 }
+.btn.btn-standard {
+  width: auto;
+}
 
 .btn-square {
   position: relative;
@@ -11835,6 +11887,10 @@ input[type="radio"] .styled:checked + label::after {
 .row.no-gutters > [class*=" col-"], .row.no-gutters > [class^="col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.row.nomargin {
+  margin-left: -10px !important;
+  margin-right: -10px !important;
 }
 
 .gap > [class*=" col-"]:first-of-type, .gap > [class^="col-"]:first-of-type {
@@ -11897,6 +11953,14 @@ input[type="radio"] .styled:checked + label::after {
 
 .ttop {
   vertical-align: top !important;
+}
+
+.nomargin {
+  margin: 0 !important;
+}
+
+.nopadding {
+  padding: 0 !important;
 }
 
 table {
@@ -12053,6 +12117,16 @@ img {
 }
 .radio-verifiche input[type="radio"]:checked + label::after {
   background-color: #7EBC49;
+}
+
+.checkbox-verifiche input[type="checkbox"]:checked + label::before,
+.checkbox-verifiche input[type="radio"]:checked + label::before {
+  background-color: #cde6f5;
+  border-color: #cde6f5;
+}
+.checkbox-verifiche input[type="checkbox"]:checked + label::after,
+.checkbox-verifiche input[type="radio"]:checked + label::after {
+  color: #fff;
 }
 
 .radio-image {
@@ -12559,6 +12633,19 @@ img {
 .colonnaDX .project-navbar .active > a {
   opacity: 1;
 }
+.voce-dettaglio .project-navbar {
+  background: #efefef;
+}
+.voce-dettaglio .project-navbar a {
+  font-size: 1em !important;
+  text-transform: inherit;
+}
+.voce-dettaglio .project-navbar .active {
+  background-color: #fff;
+}
+.voce-dettaglio .project-navbar .active > a {
+  opacity: 1;
+}
 .project-navbar.verifiche {
   background-color: #7EBC49;
 }
@@ -12665,5 +12752,74 @@ img {
 /*--------------------------------*/
 /* @end Struttura catalogo */
 /*--------------------------------*/
+/*--------------------------------*/
+/* @group Tabella prezzi */
+/*--------------------------------*/
+.body-tabella-prezzi {
+  padding: 0;
+}
+.body-tabella-prezzi .header {
+  margin: 5px 0 !important;
+}
+.body-tabella-prezzi .header .btn-group {
+  margin-top: 10px;
+}
+.body-tabella-prezzi .content {
+  background: #efefef;
+  padding: 0 20px;
+}
+
+.corpo-tabella-prezzi {
+  background: #fff;
+  padding: 1px;
+}
+
+.voce-dettaglio .title {
+  display: block;
+  width: 100%;
+  background: #2790CF;
+  margin: 2px 0;
+  padding: 10px;
+  color: #fff;
+}
+
+.tabella-prezzi {
+  padding: 10px;
+}
+.tabella-prezzi .checkbox, .tabella-prezzi .radio {
+  margin: 0;
+}
+.tabella-prezzi table {
+  color: #2790CF;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.tabella-prezzi table label {
+  padding-left: 26px;
+}
+.tabella-prezzi table td {
+  padding: 5px;
+}
+.tabella-prezzi table td:not(.selector) {
+  font-size: .75em;
+}
+.tabella-prezzi table tr:nth-child(even) {
+  background-color: #fff;
+}
+.tabella-prezzi table tr:nth-child(even) .tot {
+  font-weight: bold;
+  background-color: #e2f1fa;
+}
+.tabella-prezzi table tr:nth-child(odd) {
+  background-color: #efefef;
+}
+.tabella-prezzi table tr:nth-child(odd) .tot {
+  font-weight: bold;
+  background-color: #c4e2f4;
+}
+.tabella-prezzi table tr:first-of-type td {
+  font-weight: bold;
+  background-color: #e2e2e2;
+}
 
 /*# sourceMappingURL=styles.css.map */

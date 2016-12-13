@@ -59,6 +59,22 @@
         content       : "é";
         text-transform: initial;
     }
+    &.icon-help:after {
+        content       : "?";
+        text-transform: initial;
+    }
+    &.icon-add:after {
+        content       : "{";
+        text-transform: initial;
+    }
+    &.icon-up:after {
+        content       : "í";
+        text-transform: initial;
+    }
+    &.icon-down:after {
+        content       : "ì";
+        text-transform: initial;
+    }
 }
 
 /* @group ICONE PRINCIPALI */

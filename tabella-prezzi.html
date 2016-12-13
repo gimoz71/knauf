@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KNAUF - Generatore di Capitolati</title>
+    <meta name="description" content="Knauf. Generatore di Capitolati.">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="Knauf. Generatore di Capitolati.">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2790cf">
+    <meta name="msapplication-TileColor" content="#2790cf">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,600,700" rel="stylesheet">
+    <!-- <link href="stylesheets/soon.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <style type="text/css">
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body class="body-tabella-prezzi">
+
+    <!-- corpo -->
+    <div class="container content">
+        <div class="row no-gutters nomargin header">
+            <div class="col-sm-6 tleft">
+                <h4>Riga dell'offerta</h4>
+            </div>
+            <div class="col-sm-6 t-right">
+                <div class="btn-group pull-right" role="group" aria-label="...">
+                    <a href="#" class="btn btn-standard btn-primary with-icon"><span class="icon icon-salva"></span> Ok</a>
+                    <a href="#" class="btn btn-standard btn-primary with-icon"><span class="icon icon-annulla"></span> Annulla</a>
+                    <a href="#" class="btn btn-standard btn-primary with-icon"><span class="icon icon-help"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="corpo-tabella-prezzi">
+            <div class="scelta-voce">
+                <table class="table table-feature">
+                    <tr>
+                        <td>
+                            <table class="table-feature">
+                                <tr>
+                                    <td class="tright" style="width: 150px">
+                                        Scelta voce
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-justified nomargin" role="group" aria-label="...">
+                                            <a href="#" class="btn btn-sm btn-primary">Catalogo dei Sistemi</a>
+                                            <a href="#" class="btn btn-sm btn-primary">Voce Personalizzata</a>
+                                            <a href="#" class="btn btn-sm btn-primary">Copia da Altra Offerta</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tright">
+                                        Descrizione
+                                    </td>
+                                    <td class="tleft">
+                                        <textarea maxlength="20"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="row nomargin">
+                                            <div class="col-sm-5">
+                                                Quantit&agrave; <input type="text" value="0,000">
+                                            </div>
+                                            <div class="col-sm-5">
+                                                Unit&agrave; mis. <input type="text" style="font-weight: bold;" value="M2">
+                                            </div>
+                                            <div class="col-sm-5">
+                                                Prezzo &euro; <input type="text" value="0,000">
+                                            </div>
+                                            <div class="col-sm-5">
+                                                P. imposto &euro; <input type="text" value="0,000">
+                                            </div>
+                                            <div class="col-sm-5">
+                                                Importo &euro; <input type="text" style="font-weight: bold;" value="0,000">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="voce-dettaglio">
+                <h4 class="title tleft">Dettagli voce</h4>
+                <nav class="project-navbar">
+                    <div class="col-sm-5">
+                        <a href="catalogo-scheda-vento.html" class="project-navbar-voice">Testata</a>
+                    </div>
+                    <div class="col-sm-5 active">
+                        <a href="catalogo-scheda-sisma.html" class="project-navbar-voice">Materiali</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="catalogo-scheda-folla.html" class="project-navbar-voice">Manodopera</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="catalogo-scheda.html" class="project-navbar-voice">Trasporti</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="catalogo-scheda.html" class="project-navbar-voice">Documenti</a>
+                    </div>
+                </nav>
+                <div class="tabella-prezzi">
+
+                    <div class="btn-group pull-right" role="group" aria-label="...">
+                        <a href="#" class="btn btn-standard btn-primary with-icon"><span class="icon icon-add"></span> Aggiungi materiale KNAUF</a>
+                        <a href="#" class="btn btn-standard btn-primary with-icon"><span class="icon icon-add"></span> Materiale personalizzato</a>
+                        <a href="#" class="btn btn-standard btn-primary with-icon"><span class="icon icon-annulla"></span> Elimina</a>
+                        <a href="#" class="btn btn-standard btn-primary with-icon"><span class="icon icon-up"></span> Su</a>
+                        <a href="#" class="btn btn-standard btn-primary with-icon"><span class="icon icon-down"></span> Gi&ugrave;</a>
+                    </div>
+                    <div class="overflow: auto;">
+                        <table class="tcenter">
+                            <tr>
+                                <td class="selector">
+                                    <div class="checkbox checkbox-verifiche">
+                                        <input type="checkbox" name="sovraccarico" id="checkbox1" value="option2">
+                                        <label for="checkbox1">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="tleft" style="width: 40%;">
+                                    Descrizione
+                                </td>
+                                <td>
+                                    Q.t&agrave; x1
+                                </td>
+                                <td>
+                                    Q.t&agrave;
+                                </td>
+                                <td>
+                                    U.m.
+                                </td>
+                                <td>
+                                    Prezzo &euro;
+                                </td>
+                                <td>
+                                    Sc. %
+                                </td>
+                                <td>
+                                    Cst. &euro; x1
+                                </td>
+                                <td>
+                                    Costo &euro;
+                                </td>
+                                <td>
+                                    No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selector">
+                                    <div class="checkbox checkbox-verifiche">
+                                        <input type="checkbox" name="sovraccarico" id="checkbox2" value="option2">
+                                        <label for="checkbox2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="tleft">
+                                    Nastro monoadesivo sp.4 mm 70x30000 mm
+                                </td>
+                                <td>
+                                    0,7
+                                </td>
+                                <td class="tot">
+                                    7
+                                </td>
+                                <td class="tot">
+                                    M
+                                </td>
+                                <td>
+                                    0,33
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    0,23
+                                </td>
+                                <td class="tot">
+                                    2,33
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selector">
+                                    <div class="checkbox checkbox-verifiche">
+                                        <input type="checkbox" name="sovraccarico" id="checkbox3" value="option2">
+                                        <label for="checkbox3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="tleft">
+                                    Nastro monoadesivo sp.4 mm 70x30000 mm dfwfwefwefwe wfew wef wefew fwef ewfewf ewfewf ew
+                                </td>
+                                <td>
+                                    0,7
+                                </td>
+                                <td class="tot">
+                                    7
+                                </td>
+                                <td class="tot">
+                                    M
+                                </td>
+                                <td>
+                                    0,33
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    0,23
+                                </td>
+                                <td class="tot">
+                                    2,33
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selector">
+                                    <div class="checkbox checkbox-verifiche">
+                                        <input type="checkbox" name="sovraccarico" id="checkbox4" value="option2">
+                                        <label for="checkbox4">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="tleft">
+                                    Nastro monoadesivo sp.4 mm 70x30000 mm
+                                </td>
+                                <td>
+                                    0,7
+                                </td>
+                                <td class="tot">
+                                    7
+                                </td>
+                                <td class="tot">
+                                    M
+                                </td>
+                                <td>
+                                    0,33
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    0,23
+                                </td>
+                                <td class="tot">
+                                    2,33
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fine corpo -->
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.js"></script>
+    <script src="javascripts/holder.js"></script>
+    <script src="javascripts/custom.js"></script>
+</body>
+
+</html>
