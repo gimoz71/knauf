@@ -1209,5 +1209,20 @@ img {
                 background-color: darken($tab-default-color, 5);
             }
         }
+        .others {
+            font-weight: bold;
+            text-transform: uppercase;
+            td {
+                // border-top: solid 10px white;
+            }
+            background-color: $content-color !important;
+            .tot-label {
+                background-color: lighten($tab-default-color, 3);
+            }
+            .tot {
+                background-color: $text-default-color !important;
+                color: $content-color;
+            }
+        }
     }
 }

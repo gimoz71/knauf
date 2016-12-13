@@ -12821,5 +12821,17 @@ img {
   font-weight: bold;
   background-color: #e2e2e2;
 }
+.tabella-prezzi table .others {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #fff !important;
+}
+.tabella-prezzi table .others .tot-label {
+  background-color: #f7f7f7;
+}
+.tabella-prezzi table .others .tot {
+  background-color: #2790CF !important;
+  color: #fff;
+}
 
 /*# sourceMappingURL=styles.css.map */
