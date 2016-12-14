@@ -227,49 +227,14 @@
 .overflowContainerSX {
     overflow: auto;
 }
-/* allineamento testo */
-.tleft {
-    text-align: left !important;
-}
 
-.tright {
-    text-align: right !important;
-}
-
-.tcenter {
-    text-align: center !important;
-}
-
-.tjustify {
-    text-align: justify !important;
-}
-
-.tinherit {
-    text-align: inherit !important;
-}
-
-.tmiddle {
-    vertical-align: middle !important;
-}
-
-.tbottom {
-    vertical-align: bottom !important;
-}
-
-.ttop {
-    vertical-align: top !important;
-}
-
-.nomargin {
-    margin: 0 !important;
-}
-
-.nopadding {
-    padding: 0 !important;
-}
 
 table {
     width: 100%;
+}
+
+.table-container {
+    border: solid 2px $tab-default-color;
 }
 
 .table-feature {
@@ -1158,25 +1123,50 @@ img {
 /*--------------------------------*/
 /* @end Struttura catalogo */
 /*--------------------------------*/
+
 /*--------------------------------*/
-/* @group Tabella prezzi */
+/* @group Tabelle e Modali  */
 /*--------------------------------*/
-.body-tabella-prezzi {
+
+// elementi comuni tabelle
+
+.body-tabella {
     padding: 0;
-    .header {
-        margin: 5px 0 !important;
-        .btn-group {
-            margin-top: 10px;
+    &.prezzi {
+        .header {
+            margin: 5px 0 !important;
+            .title {
+                text-align: left;
+                @media (max-width: $screen-sm) {
+                    text-align: center;
+                }
+            }
+            .btn-group {
+                float: right;
+                margin-top: 5px;
+                @media (max-width: $screen-sm) {
+                    float: none;
+                    text-align: center;
+                }
+            }
         }
     }
 
     .content {
         background: $tab-default-color;
-        padding   : 0 20px;
+        padding   : 20px;
     }
 }
+.content-modal {
+    background: $tab-default-color;
+    padding   : 0 !important;
+    margin: 0;
+}
+
+// Tabella prezzi
 
 .corpo-tabella-prezzi {
+    margin: 0 !important;
     background: $content-color;
     padding: 1px;
 }
@@ -1246,3 +1236,40 @@ img {
         }
     }
 }
+
+// pulsanti modali
+
+.modal-content {
+    border: solid 15px $tab-default-color;
+    box-shadow: none;
+}
+.modal-backdrop {
+    background-color: rgba($body-color, 1);
+}
+
+.graphic-button {
+    margin: 0 !important;
+    .button {
+        display: inline-block;
+        border: solid 1px $content-color;
+        border-radius: 50%;
+        padding: .25em;
+        font-size: 4em;
+        line-height: 0;
+        margin: 20px 10px;
+        color: #fff;
+        background-color: rgba(0,0,0,.025);
+        // text-shadow: 0 0 4px rgba(0,0,0,.1);
+        i {
+            width: 1em;
+            height: 1em;
+        }
+        &:hover {
+            background-color: rgba(0,0,0,.075);
+        }
+    }
+}
+
+/*--------------------------------*/
+/* @end Tabelle e Modali  */
+/*--------------------------------*/

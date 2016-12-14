@@ -70,3 +70,44 @@ $array-spacer: 5,10,15,20,25,30,35,40,45,50,100,200;
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+/* allineamento testo */
+.tleft {
+    text-align: left !important;
+}
+
+.tright {
+    text-align: right !important;
+}
+
+.tcenter {
+    text-align: center !important;
+}
+
+.tjustify {
+    text-align: justify !important;
+}
+
+.tinherit {
+    text-align: inherit !important;
+}
+
+.tmiddle {
+    vertical-align: middle !important;
+}
+
+.tbottom {
+    vertical-align: bottom !important;
+}
+
+.ttop {
+    vertical-align: top !important;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
