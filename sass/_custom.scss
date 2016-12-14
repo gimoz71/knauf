@@ -384,7 +384,31 @@ img {
     height   : auto;
 }
 @include radio-variant( '.radio-verifiche', $verifiche-color);
-@include checkbox-variant( '.checkbox-verifiche', $sub-content-color);
+@include checkbox-variant( '.checkbox-verifiche', $verifiche-color);
+
+.radio, .checkbox {
+    &.right {
+        label {
+            padding-left: 0;
+            padding-right: 40px;
+            &:before {
+                left: auto;
+                right: 0;
+            }
+            &:after {
+                left: auto;
+                right: .1em;
+            }
+        }
+    }
+    &.fullwidth {
+        label {
+            width: 100%;
+            position: inherit;
+        }
+    }
+}
+
 
 .radio-image {
     margin: 0;
@@ -1165,7 +1189,7 @@ img {
 
 // Tabella prezzi
 
-.corpo-tabella-prezzi {
+.corpo-tabella {
     margin: 0 !important;
     background: $content-color;
     padding: 1px;
@@ -1181,7 +1205,7 @@ img {
         color     : $content-color;
     }
 }
-.tabella-prezzi {
+.tabella {
     .checkbox, .radio {
         margin: 0;
     }
@@ -1238,6 +1262,12 @@ img {
 }
 
 // pulsanti modali
+
+.overflow-modal-container {
+    overflow: auto;
+    margin: 4px;
+    max-height: 400px;
+}
 
 .modal-content {
     border: solid 15px $tab-default-color;

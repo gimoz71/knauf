@@ -12133,12 +12133,29 @@ img {
 
 .checkbox-verifiche input[type="checkbox"]:checked + label::before,
 .checkbox-verifiche input[type="radio"]:checked + label::before {
-  background-color: #cde6f5;
-  border-color: #cde6f5;
+  background-color: #7EBC49;
+  border-color: #7EBC49;
 }
 .checkbox-verifiche input[type="checkbox"]:checked + label::after,
 .checkbox-verifiche input[type="radio"]:checked + label::after {
   color: #fff;
+}
+
+.radio.right label, .checkbox.right label {
+  padding-left: 0;
+  padding-right: 40px;
+}
+.radio.right label:before, .checkbox.right label:before {
+  left: auto;
+  right: 0;
+}
+.radio.right label:after, .checkbox.right label:after {
+  left: auto;
+  right: .1em;
+}
+.radio.fullwidth label, .checkbox.fullwidth label {
+  width: 100%;
+  position: inherit;
 }
 
 .radio-image {
@@ -12806,7 +12823,7 @@ img {
   margin: 0;
 }
 
-.corpo-tabella-prezzi {
+.corpo-tabella {
   margin: 0 !important;
   background: #fff;
   padding: 1px;
@@ -12821,55 +12838,61 @@ img {
   color: #fff;
 }
 
-.tabella-prezzi {
+.tabella {
   padding: 10px;
 }
-.tabella-prezzi .checkbox, .tabella-prezzi .radio {
+.tabella .checkbox, .tabella .radio {
   margin: 0;
 }
-.tabella-prezzi table {
+.tabella table {
   color: #2790CF;
   border-collapse: separate;
   border-spacing: 2px;
 }
-.tabella-prezzi table label {
+.tabella table label {
   padding-left: 26px;
 }
-.tabella-prezzi table td {
+.tabella table td {
   padding: 5px;
 }
-.tabella-prezzi table td:not(.selector) {
+.tabella table td:not(.selector) {
   font-size: .75em;
 }
-.tabella-prezzi table tr:nth-child(even) {
+.tabella table tr:nth-child(even) {
   background-color: #fff;
 }
-.tabella-prezzi table tr:nth-child(even) .tot {
+.tabella table tr:nth-child(even) .tot {
   font-weight: bold;
   background-color: #e2f1fa;
 }
-.tabella-prezzi table tr:nth-child(odd) {
+.tabella table tr:nth-child(odd) {
   background-color: #efefef;
 }
-.tabella-prezzi table tr:nth-child(odd) .tot {
+.tabella table tr:nth-child(odd) .tot {
   font-weight: bold;
   background-color: #c4e2f4;
 }
-.tabella-prezzi table tr:first-of-type td {
+.tabella table tr:first-of-type td {
   font-weight: bold;
   background-color: #e2e2e2;
 }
-.tabella-prezzi table .others {
+.tabella table .others {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #fff !important;
 }
-.tabella-prezzi table .others .tot-label {
+.tabella table .others .tot-label {
   background-color: #f7f7f7;
 }
-.tabella-prezzi table .others .tot {
+.tabella table .others .tot {
   background-color: #2790CF !important;
   color: #fff;
+}
+
+.overflow-modal-container {
+  overflow: auto;
+  margin: 4px;
+  max-height: 400px;
 }
 
 .modal-content {
