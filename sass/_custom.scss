@@ -215,6 +215,11 @@
 }
 // automatizzo lo stile per l'altezza automatica in jQuery
 
+// variazione per ASP.Net
+nav + div {
+    height: 100%;
+}
+
 .parentOverflowContainer {
     height: 100%;
 }
@@ -382,6 +387,9 @@ body {
     background            : $body-color;
     text-align            : center;
     padding-top           : $navbar-height;
+    & > form:first-child {
+        height: 100%;
+    }
 }
 
 h1,

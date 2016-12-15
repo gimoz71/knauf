@@ -11179,6 +11179,10 @@ input[type="radio"] .styled:checked + label::after {
   width: 150px;
 }
 
+.small-flex {
+  width: 30%;
+}
+
 @font-face {
   font-family: 'robotobold';
   src: url("../fonts/Roboto-Bold-webfont.eot");
@@ -11996,6 +12000,10 @@ input[type="radio"] .styled:checked + label::after {
   justify-content: space-between;
 }
 
+nav + div {
+  height: 100%;
+}
+
 .parentOverflowContainer {
   height: 100%;
 }
@@ -12129,12 +12137,12 @@ table {
   }
 }
 .inverse .table-feature select {
-  background-image: url(/images/../images/select-arrow-inverse.png?1481806316);
+  background-image: url(/images/../images/select-arrow-inverse.png?1481807722);
   background-color: #fff;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .inverse .table-feature select {
-    background-image: url(/images/../images/select-arrow-inverse@2x.png?1481806268);
+    background-image: url(/images/../images/select-arrow-inverse@2x.png?1481807722);
     background-size: 30px 30px;
   }
 }
@@ -12157,6 +12165,9 @@ body {
   background: #2790CF;
   text-align: center;
   padding-top: 73px;
+}
+body > form:first-child {
+  height: 100%;
 }
 
 h1,
