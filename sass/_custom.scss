@@ -35,6 +35,7 @@
 }
 /* @group icone Knauf */
 @import "icon-custom";
+@import "yamm";
 /* @end icone Knauf */
 /*-------------------------------*/
 /* override e aggiunte a stili bootstrap      */
@@ -243,7 +244,11 @@ table {
     background-color: $content-color;
     width           : 100%;
     color           : $body-color;
+    &.inverse {
+        background-color           : $body-color;
+        color: $content-color;
 
+    }
     &.table {
         margin-bottom: 10px;
 
@@ -319,6 +324,10 @@ table {
         &.discrete {
             width: 5em;
         }
+        .inverse & {
+            background-color: $content-color;
+            color: $body-color;
+        }
     }
 
     .feature-setting {
@@ -337,6 +346,7 @@ table {
     }
 
     select {
+        cursor: pointer;
         padding-left       : 35px;
         -webkit-appearance : none;
         box-shadow         : none;
@@ -344,6 +354,11 @@ table {
         background-position: left center;
         background-repeat  : no-repeat;
         background-color   : $sub-content-color;
+        .inverse & {
+            @include img-retina("../images/select-arrow-inverse.png", "../images/select-arrow-inverse@2x.png", 30px, 30px);
+            background-color   : $content-color;
+
+        }
     }
 }
 /*--------------------------------------------------*/

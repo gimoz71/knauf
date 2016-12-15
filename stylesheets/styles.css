@@ -11175,6 +11175,10 @@ input[type="radio"] .styled:checked + label::after {
   padding: 0 !important;
 }
 
+.small {
+  width: 150px;
+}
+
 @font-face {
   font-family: 'robotobold';
   src: url("../fonts/Roboto-Bold-webfont.eot");
@@ -11807,6 +11811,36 @@ input[type="radio"] .styled:checked + label::after {
   }
 }
 
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .collapse,
+.yamm .dropdown,
+.yamm .dropup,
+.yamm .nav {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+  padding: 0 !important;
+  border: 0 !important;
+  color: #fff;
+}
+.yamm .yamm-content {
+  padding: 0px;
+  background-color: #2790CF;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
 /* @end icone Knauf */
 /*-------------------------------*/
 /* override e aggiunte a stili bootstrap      */
@@ -11991,6 +12025,10 @@ table {
   width: 100%;
   color: #2790CF;
 }
+.table-feature.inverse {
+  background-color: #2790CF;
+  color: #fff;
+}
 .table-feature.table {
   margin-bottom: 10px;
 }
@@ -12058,6 +12096,12 @@ table {
 .table-feature textarea.discrete {
   width: 5em;
 }
+.inverse .table-feature input:not([type="radio"]):not([type="checkbox"]), .inverse
+.table-feature select, .inverse
+.table-feature textarea {
+  background-color: #fff;
+  color: #2790CF;
+}
 .table-feature .feature-setting {
   font-size: 0.75em;
 }
@@ -12069,6 +12113,7 @@ table {
   padding-bottom: 8px;
 }
 .table-feature select {
+  cursor: pointer;
   padding-left: 35px;
   -webkit-appearance: none;
   box-shadow: none;
@@ -12080,6 +12125,16 @@ table {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .table-feature select {
     background-image: url(/images/../images/select-arrow@2x.png?1479658693);
+    background-size: 30px 30px;
+  }
+}
+.inverse .table-feature select {
+  background-image: url(/images/../images/select-arrow-inverse.png?1481806316);
+  background-color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .inverse .table-feature select {
+    background-image: url(/images/../images/select-arrow-inverse@2x.png?1481806268);
     background-size: 30px 30px;
   }
 }
