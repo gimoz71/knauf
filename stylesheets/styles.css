@@ -11956,8 +11956,7 @@ input[type="radio"] .styled:checked + label::after {
     bottom: 0;
   }
 }
-.btn-square:hover,
-.btn-square .active {
+.btn-square:hover, .btn-square.active {
   border-color: #7EBC49;
 }
 

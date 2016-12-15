@@ -149,7 +149,7 @@
     }
 
     &:hover,
-    .active {
+    &.active {
         border-color: $verifiche-color;
     }
 }
