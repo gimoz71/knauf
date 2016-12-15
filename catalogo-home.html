@@ -73,8 +73,8 @@
             <div class="row no-gutters overflowContainerSX">
                 <div class="col-sm-12">
                     <ul class="nav nav-tabs cat-list tabs-left main">
-                        <li class="action"><a href="catalogo-home-submenu-pareti.html"><i class="icon-pareti">&nbsp;</i>Pareti</a><a href="catalogo-scheda.html" class="action-link"><span class="icon icon-impostazioni"></span></a></li>
-                        <li class="action"><a href="catalogo-home-submenu-contropareti.html"><i class="icon-contropareti">&nbsp;</i>Contropareti</a><a href="#" class="action-link"><span class="icon icon-impostazioni"></span></a></li>
+                        <li class="action"><a href="catalogo-home-submenu-pareti.html"><i class="icon-pareti">&nbsp;</i>Pareti</a><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm"  class="action-link"><span class="icon icon-impostazioni"></span></a></li>
+                        <li class="action"><a href="catalogo-home-submenu-contropareti.html"><i class="icon-contropareti">&nbsp;</i>Contropareti</a><a href="#"class="action-link"><span class="icon icon-impostazioni"></span></a></li>
                         <li class="action"><a href="catalogo-home-submenu-controsoffitti.html"><i class="icon-controsoffitti">&nbsp;</i>Controsoffitti</a><a href="#" class="action-link"><span class="icon icon-impostazioni"></span></a></li>
                         <li><a href="catalogo-home-submenu-cmi.html"><i class="icon-controsoffitti-modulari-ispezionabili">&nbsp;</i>Controsoffitti modulari ispezionabili</a></li>
                         <li><a href="catalogo-home-submenu-cappotto-termico.html"><i class="icon-sistema-cappotto-termico">&nbsp;</i>Sistema cappotto termico</a></li>
@@ -122,6 +122,18 @@
     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="confirm">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="container-fluid content content-modal">
+                        
+                    <h4>Apri modifiche?</h4>
+                    <a href="catalogo-scheda.html" class="btn btn-primary">Si</a>
+                    <a href="catalogo-scheda-no-verifiche-pareti.html" class="btn btn-primary">No</a>
+                </div>
             </div>
         </div>
     </div>
